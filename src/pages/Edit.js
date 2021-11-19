@@ -3,10 +3,8 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, Navigate, Link } from 'react-router-dom';
 
-import Navbar from 'components/Navbar';
-import FormRow from 'components/FormRow';
-import Spinner from 'components/Spinner';
 import { editJob } from 'redux/apiCalls';
+import { FormRow, Navbar, Spinner } from 'components';
 import { fetchSingleJobBySlugAsync } from 'redux/jobs';
 
 const Edit = () => {

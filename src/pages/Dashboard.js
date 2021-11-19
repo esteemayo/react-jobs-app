@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Jobs from 'components/Jobs';
-import Navbar from 'components/Navbar';
-import FormRow from 'components/FormRow';
 import { createJobAsync } from 'redux/jobs';
+import { FormRow, Jobs, Navbar } from 'components';
 
 const Dashboard = () => {
   const dispatch = useDispatch();

@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import logo from 'assets/logo.svg';
-import FormRow from 'components/FormRow';
+import { FormRow } from 'components';
 import { loginUserAsync, registerUserAsync } from 'redux/user';
 
 const Register = () => {

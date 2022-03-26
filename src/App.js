@@ -10,7 +10,7 @@ function App() {
     <Router>
       <ToastContainer />
       <Routes>
-        <Route path='/' >
+        <Route path='/'>
           <Route index element={<Home />} />
           <Route path='dashboard' element={<Dashboard />} />
           <Route path='register' element={<Register />} />
@@ -20,6 +20,6 @@ function App() {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

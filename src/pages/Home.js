@@ -7,34 +7,34 @@ import logo from 'assets/logo.svg';
 import main from 'assets/main.svg';
 
 const Home = () => {
-    const { user } = useSelector((state) => state.user);
+  const { user } = useSelector((state) => state.user);
 
-    return (
-        <>
-            {user && <Navigate to='/dashboard' />}
-            <Wrapper>
-                <nav>
-                    <img src={logo} alt='jobs app' />
-                </nav>
-                <div className='container page'>
-                    <div className='info'>
-                        <h1>job tracking app</h1>
-                        <p>
-                            I'm baby viral enamel pin chartreuse cliche retro af selfies
-                            kinfolk photo booth plaid jianbing actually squid 3 wolf moon
-                            lumbersexual. Hell of humblebrag gluten-free lo-fi man braid
-                            leggings.
-                        </p>
+  return (
+    <>
+      {user && <Navigate to='/dashboard' />}
+      <Wrapper>
+        <nav>
+          <img src={logo} alt='jobs app' />
+        </nav>
+        <div className='container page'>
+          <div className='info'>
+            <h1>job tracking app</h1>
+            <p>
+              I'm baby viral enamel pin chartreuse cliche retro af selfies
+              kinfolk photo booth plaid jianbing actually squid 3 wolf moon
+              lumbersexual. Hell of humblebrag gluten-free lo-fi man braid
+              leggings.
+            </p>
 
-                        <Link to='/register' className='btn hero-btn'>
-                            Login / Register
-                        </Link>
-                    </div>
-                    <img src={main} alt='job hunt' className='img main-img' />
-                </div>
-            </Wrapper>
-        </>
-    );
+            <Link to='/register' className='btn hero-btn'>
+              Login / Register
+            </Link>
+          </div>
+          <img src={main} alt='job hunt' className='img main-img' />
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 
 const Wrapper = styled.div`

@@ -23,7 +23,12 @@ const Navbar = () => {
               <FaCaretDown />
             </button>
             <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
-              <button className='dropdown-btn' onClick={() => dispatch(logout())}>logout</button>
+              <button
+                className='dropdown-btn'
+                onClick={() => dispatch(logout())}
+              >
+                logout
+              </button>
             </div>
           </div>
         )}

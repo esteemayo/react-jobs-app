@@ -12,7 +12,12 @@ const Edit = () => {
   const { pathname } = useLocation();
   const path = pathname.split('/')[2];
   const { user } = useSelector((state) => state.user);
-  const { editItem, isLoading, editComplete, singleJobError: error } = useSelector((state) => state.jobs);
+  const {
+    editItem,
+    isLoading,
+    editComplete,
+    singleJobError: error,
+  } = useSelector((state) => state.jobs);
   const [values, setValues] = useState({
     id: null,
     company: '',
@@ -46,7 +51,7 @@ const Edit = () => {
   };
 
   if (isLoading && !editItem) {
-    return <Spinner />
+    return <Spinner />;
   }
 
   if (!editItem || error) {

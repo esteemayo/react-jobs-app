@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { createJobAsync } from 'redux/jobs';
@@ -8,7 +7,6 @@ import { FormRow, Jobs, Navbar } from 'components';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
-  const { user } = useSelector((state) => state.user);
   const { showAlert, isLoading } = useSelector((state) => state.jobs);
   const [values, setValues] = useState({ company: '', position: '' });
 
@@ -27,8 +25,6 @@ const Dashboard = () => {
       setValues({ company: '', position: '' });
     }
   };
-
-  if (!user) return <Navigate to='/' />;
 
   return (
     <>
@@ -71,6 +67,7 @@ const Dashboard = () => {
 
 const Wrapper = styled.section`
   padding: 3rem 0;
+
   .job-form {
     background: var(--white);
     display: grid;
@@ -80,27 +77,35 @@ const Wrapper = styled.section`
     margin-bottom: 3rem;
     border-radius: var(--borderRadius);
     padding: 1.5rem;
+
     .form-input {
       padding: 0.75rem;
     }
+
     .form-input:focus {
       outline: 1px solid var(--primary-500);
     }
+
     .form-row {
       margin-bottom: 0;
     }
+
     .btn {
       padding: 0.75rem;
     }
+
     @media (min-width: 776px) {
       grid-template-columns: 1fr 1fr auto;
+
       .btn {
         height: 100%;
         padding: 0 2rem;
       }
+
       column-gap: 2rem;
     }
   }
+
   .alert {
     max-width: var(--max-width);
     margin-bottom: 1rem;

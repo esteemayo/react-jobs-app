@@ -14,6 +14,7 @@ const JobColumns = () => {
 
 const Wrapper = styled.section`
   display: none;
+  
   @media (min-width: 992px) {
     display: block;
     background: var(--grey-200);

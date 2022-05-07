@@ -1,20 +1,46 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
 
-import { Edit, Error, Home, Dashboard, Register } from 'pages';
-
-import 'react-toastify/dist/ReactToastify.css';
+import { Edit, Error, Home, Dashboard, Register, SharedLayout } from 'pages';
+import ProtectedRoute from 'utils/ProtectedRoute';
+import AuthRoute from 'utils/AuthRoute';
 
 function App() {
   return (
     <Router>
-      <ToastContainer />
       <Routes>
-        <Route path='/'>
-          <Route index element={<Home />} />
-          <Route path='dashboard' element={<Dashboard />} />
-          <Route path='register' element={<Register />} />
-          <Route path='edit/:slug' element={<Edit />} />
+        <Route path='/' element={<SharedLayout />}>
+          <Route
+            index
+            element={
+              <AuthRoute>
+                <Home />
+              </AuthRoute>
+            }
+          />
+          <Route
+            path='dashboard'
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='register'
+            element={
+              <AuthRoute>
+                <Register />
+              </AuthRoute>
+            }
+          />
+          <Route
+            path='edit/:slug'
+            element={
+              <ProtectedRoute>
+                <Edit />
+              </ProtectedRoute>
+            }
+          />
         </Route>
         <Route path='*' element={<Error />} />
       </Routes>

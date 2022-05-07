@@ -155,6 +155,10 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);
@@ -230,6 +234,7 @@ ul {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
+  border: 1px solid var(--primary-500);
 }
 
 .form-row {

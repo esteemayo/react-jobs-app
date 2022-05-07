@@ -61,6 +61,7 @@ const Container = styled.section`
     justify-content: center;
     text-align: center;
   }
+
   .icon {
     background: var(--primary-500);
     display: block;
@@ -75,16 +76,20 @@ const Container = styled.section`
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   span {
     text-transform: capitalize;
     letter-spacing: var(--letterSpacing);
   }
+
   .position {
     font-weight: 600;
   }
+
   .date {
     color: var(--grey-500);
   }
+
   .status {
     border-radius: var(--borderRadius);
     text-transform: capitalize;
@@ -93,6 +98,7 @@ const Container = styled.section`
     margin: 0.75rem auto;
     width: 100px;
   }
+
   .edit-btn {
     color: var(--green-dark);
     border-color: transparent;
@@ -103,6 +109,7 @@ const Container = styled.section`
     display: inline-block;
     appearance: none;
   }
+
   .delete-btn {
     color: var(--red-dark);
     border-color: transparent;
@@ -110,31 +117,38 @@ const Container = styled.section`
     cursor: pointer;
     background: transparent;
   }
+
   .edit-btn,
   .delete-btn {
     font-size: 1rem;
     line-height: 1.15;
     margin-bottom: -3px;
   }
+
   .action-div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 0.5rem;
   }
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
+
   @media (min-width: 992px) {
     grid-template-columns: 1fr;
+
     .icon {
       display: none;
     }
+
     background: var(--white);
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
+
     .job {
       border-radius: 0;
       justify-content: left;
@@ -146,24 +160,30 @@ const Container = styled.section`
       column-gap: 1rem;
       margin-bottom: 0;
     }
+
     .job:last-child {
       border-bottom: none;
     }
+
     span {
       font-size: var(--small-text);
     }
+
     .company,
     .position {
       font-weight: 400;
       text-transform: capitalize;
     }
+
     .date {
       font-weight: 400;
       color: var(--grey-500);
     }
+
     .status {
       font-size: var(--smallText);
     }
+
     .action-div {
       margin-left: 1rem;
       justify-content: left;

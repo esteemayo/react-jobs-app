@@ -122,6 +122,7 @@ small,
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -132,6 +133,7 @@ ul {
   display: block;
   object-fit: cover;
 }
+
 /* buttons */
 
 .btn {
@@ -147,26 +149,33 @@ ul {
   text-transform: capitalize;
   display: inline-block;
 }
+
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
+
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);
 }
+
 .btn-hipster:hover {
   color: var(--primary-200);
   background: var(--primary-700);
 }
+
 .btn-block {
   width: 100%;
 }
+
 .hero-btn {
   font-size: 1.25rem;
   padding: 0.5rem 1.25rem;
 }
+
 /* alerts */
+
 .alert {
   padding: 0.375rem 0.75rem;
   margin: 0 auto;
@@ -182,10 +191,12 @@ ul {
   color: var(--red-dark);
   background: var(--red-light);
 }
+
 .alert-success {
   color: var(--green-dark);
   background: var(--green-light);
 }
+
 /* form */
 
 .form {
@@ -197,6 +208,7 @@ ul {
   padding: 2rem 2.5rem;
   margin: 3rem auto;
 }
+
 .form-label {
   display: block;
   font-size: var(--smallText);
@@ -204,6 +216,7 @@ ul {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
+
 .form-input,
 .form-textarea {
   width: 100%;
@@ -211,6 +224,12 @@ ul {
   border-radius: var(--borderRadius);
   background: var(--backgroundColor);
   border: 1px solid var(--grey-200);
+  caret-color: var(--primary-500);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
 }
 
 .form-row {
@@ -220,16 +239,19 @@ ul {
 .form-textarea {
   height: 7rem;
 }
+
 ::placeholder {
   font-family: inherit;
   /* color: var(--grey-400) !important; */
   letter-spacing: var(--letterSpacing);
 }
+
 .form-alert {
   color: var(--red-dark);
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
 }
+
 /* alert */
 
 @keyframes spinner {
@@ -247,9 +269,11 @@ ul {
   animation: spinner 0.6s linear infinite;
   margin: 0 auto;
 }
+
 .loading {
   margin: 0 auto;
 }
+
 /* title */
 
 .title {
@@ -263,11 +287,13 @@ ul {
   margin: 0 auto;
   margin-top: -1rem;
 }
+
 .page {
   width: var(--fluid-width);
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
 .full-page {
   min-height: 100vh;
 }

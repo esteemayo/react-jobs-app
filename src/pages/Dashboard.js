@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { createJobAsync } from 'redux/jobs';
-import { FormRow, Jobs, Navbar } from 'components';
+import { Alert, FormRow, Jobs, Navbar } from 'components';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -31,11 +31,7 @@ const Dashboard = () => {
       <Navbar />
 
       <Wrapper className='page'>
-        {showAlert && (
-          <div className='alert alert-danger'>
-            there was an error, please try again
-          </div>
-        )}
+        {showAlert && <Alert />}
         <form className='job-form' onSubmit={handleSubmit}>
           <FormRow
             type='name'
@@ -104,11 +100,6 @@ const Wrapper = styled.section`
 
       column-gap: 2rem;
     }
-  }
-
-  .alert {
-    max-width: var(--max-width);
-    margin-bottom: 1rem;
   }
 `;
 

@@ -2,10 +2,27 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 import logger from './logService';
+import { getJwt } from './userService';
 
-axios.defaults.baseURL = 'https://myjobapi.herokuapp.com/api/v1';
+const authFetch = axios.create({
+  baseURL: process.env.REACT_APP_API_URL,
+  headers: {
+    Accept: 'application/json',
+  },
+});
 
-axios.interceptors.response.use(null, (error) => {
+authFetch.interceptors.request.use(
+  (request) => {
+    request.headers.common['Authorization'] = `Bearer ${getJwt()}`;
+    return request;
+  },
+  (error) => {
+    logger.log(error);
+    return Promise.reject(error);
+  }
+);
+
+authFetch.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&
     error.response.status >= 400 &&
@@ -20,16 +37,11 @@ axios.interceptors.response.use(null, (error) => {
   return Promise.reject(error);
 });
 
-const setJwt = (jwt) => {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
-};
-
 const http = {
-  get: axios.get,
-  post: axios.post,
-  patch: axios.patch,
-  delete: axios.delete,
-  setJwt,
+  get: authFetch.get,
+  post: authFetch.post,
+  patch: authFetch.patch,
+  delete: authFetch.delete,
 };
 
 export default http;

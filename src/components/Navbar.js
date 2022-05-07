@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className='btn-container'>
             <button className='btn' onClick={() => setShowLogout(!showLogout)}>
               <FaUserCircle />
-              {user?.name}
+              {user?.name || user?.user?.name}
               <FaCaretDown />
             </button>
             <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
@@ -42,6 +42,7 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+
   .nav-center {
     width: var(--fluid-width);
     max-width: var(--max-width);
@@ -49,9 +50,11 @@ const Wrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
   }
+
   .btn-container {
     position: relative;
   }
+
   .btn {
     display: flex;
     align-items: center;
@@ -59,6 +62,7 @@ const Wrapper = styled.nav`
     gap: 0 0.5rem;
     position: relative;
   }
+
   .dropdown {
     position: absolute;
     top: 40px;
@@ -71,9 +75,11 @@ const Wrapper = styled.nav`
     transition: var(--transition);
     border-radius: var(--borderRadius);
   }
+
   .show-dropdown {
     visibility: visible;
   }
+
   .dropdown-btn {
     background: transparent;
     border-color: transparent;

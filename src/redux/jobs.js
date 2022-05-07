@@ -106,8 +106,7 @@ export const jobSlice = createSlice({
     },
     [createJobAsync.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
-      // state.jobs = state.jobs.unshift(payload);
-      state.jobs = [payload, ...state.jobs];
+      state.jobs.unshift(payload);
     },
     [createJobAsync.rejected]: (state) => {
       state.isLoading = false;
@@ -121,6 +120,8 @@ export const jobSlice = createSlice({
     [updateJobAsync.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.editComplete = true;
+      state.jobs[state.jobs.findIndex((job) => job._id === payload.id)] =
+        payload;
       state.editItem = payload;
     },
     [updateJobAsync.rejected]: (state) => {

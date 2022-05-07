@@ -28,14 +28,14 @@ export const registerUserAsync = createAsyncThunk(
   async (user) => {
     const { data } = await userService.registerUser(user);
     localStorage.setItem(tokenKey, data.token);
-    return data;
+    return data.user;
   }
 );
 
 export const loginUserAsync = createAsyncThunk('user/login', async (user) => {
   const { data } = await userService.loginUser(user);
   localStorage.setItem(tokenKey, data.token);
-  return data;
+  return data.user;
 });
 
 export const logout = createAsyncThunk('user/logout', () => {

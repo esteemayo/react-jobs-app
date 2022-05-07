@@ -120,8 +120,6 @@ export const jobSlice = createSlice({
     [updateJobAsync.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.editComplete = true;
-      state.jobs[state.jobs.findIndex((job) => job._id === payload.id)] =
-        payload;
       state.editItem = payload;
     },
     [updateJobAsync.rejected]: (state) => {

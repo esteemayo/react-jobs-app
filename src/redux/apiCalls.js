@@ -10,6 +10,6 @@ export const editJob = async (jobId, job, dispatch) => {
     dispatch(updateSuccess(updJob));
   } catch (err) {
     dispatch(updateError());
-    console.error(err);
+    console.error(err.response);
   }
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { createJobAsync } from 'redux/jobs';
-import { Alert, FormRow, Jobs, Navbar } from 'components';
+import { Alert, FormRow, Jobs } from 'components';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -27,37 +27,33 @@ const Dashboard = () => {
   };
 
   return (
-    <>
-      <Navbar />
+    <Wrapper className='page'>
+      {showAlert && <Alert />}
+      <form className='job-form' onSubmit={handleSubmit}>
+        <FormRow
+          type='name'
+          name='position'
+          value={values.position}
+          handleChange={handleChange}
+          horizontal
+          placeholder='Position'
+        />
 
-      <Wrapper className='page'>
-        {showAlert && <Alert />}
-        <form className='job-form' onSubmit={handleSubmit}>
-          <FormRow
-            type='name'
-            name='position'
-            value={values.position}
-            handleChange={handleChange}
-            horizontal
-            placeholder='Position'
-          />
+        <FormRow
+          type='name'
+          name='company'
+          value={values.company}
+          handleChange={handleChange}
+          horizontal
+          placeholder='Company'
+        />
+        <button type='submit' className='btn' disabled={isLoading}>
+          {isLoading ? 'Adding New Job...' : 'Add Job'}
+        </button>
+      </form>
 
-          <FormRow
-            type='name'
-            name='company'
-            value={values.company}
-            handleChange={handleChange}
-            horizontal
-            placeholder='Company'
-          />
-          <button type='submit' className='btn' disabled={isLoading}>
-            {isLoading ? 'Adding New Job...' : 'Add Job'}
-          </button>
-        </form>
-
-        <Jobs />
-      </Wrapper>
-    </>
+      <Jobs />
+    </Wrapper>
   );
 };
 

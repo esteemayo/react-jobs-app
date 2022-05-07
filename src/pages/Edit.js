@@ -4,7 +4,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { editJob } from 'redux/apiCalls';
-import { FormRow, Navbar, Spinner } from 'components';
+import { FormRow, Spinner } from 'components';
 import { fetchSingleJobBySlugAsync } from 'redux/jobs';
 
 const Edit = () => {
@@ -68,56 +68,53 @@ const Edit = () => {
   }
 
   return (
-    <>
-      <Navbar />
-      <Container className='page'>
-        <header>
-          <Link to='/dashboard' className='btn btn-block back-home'>
-            back home
-          </Link>
-        </header>
-        <form className='form' onSubmit={handleSubmit}>
-          <p>{editComplete && 'Success! Edit Complete'}</p>
-          <h4>Update Job</h4>
-          <div className='form-container'>
-            <FormRow
-              type='name'
-              name='position'
-              value={values.position}
-              handleChange={handleChange}
-            />
-            <FormRow
-              type='name'
-              name='company'
-              value={values.company}
-              handleChange={handleChange}
-            />
-            <div className='form-row'>
-              <label htmlFor='status' className='form-label'>
-                Status
-              </label>
-              <select
-                name='status'
-                value={values.status}
-                onChange={handleChange}
-                className='status'
-              >
-                <option value='pending'>pending</option>
-                <option value='interview'>interview</option>
-                <option value='declined'>declined</option>
-              </select>
-            </div>
-            <button
-              type='submit'
-              className='btn btn-block submit-btn'
-              disabled={isLoading}
+    <Container className='page'>
+      <header>
+        <Link to='/dashboard' className='btn btn-block back-home'>
+          back home
+        </Link>
+      </header>
+      <form className='form' onSubmit={handleSubmit}>
+        <p>{editComplete && 'Success! Edit Complete'}</p>
+        <h4>Update Job</h4>
+        <div className='form-container'>
+          <FormRow
+            type='name'
+            name='position'
+            value={values.position}
+            handleChange={handleChange}
+          />
+          <FormRow
+            type='name'
+            name='company'
+            value={values.company}
+            handleChange={handleChange}
+          />
+          <div className='form-row'>
+            <label htmlFor='status' className='form-label'>
+              Status
+            </label>
+            <select
+              name='status'
+              value={values.status}
+              onChange={handleChange}
+              className='status'
             >
-              {isLoading ? 'Editing...' : 'Edit'}
-            </button>
+              <option value='pending'>pending</option>
+              <option value='interview'>interview</option>
+              <option value='declined'>declined</option>
+            </select>
           </div>
-        </form>
-      </Container>
-    </>
+          <button
+            type='submit'
+            className='btn btn-block submit-btn'
+            disabled={isLoading}
+          >
+            {isLoading ? 'Editing...' : 'Edit'}
+          </button>
+        </div>
+      </form>
+    </Container>
   );
 };
 

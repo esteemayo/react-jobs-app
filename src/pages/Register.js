@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
 import logo from 'assets/logo.svg';
@@ -38,13 +39,13 @@ const Register = () => {
       if (email && password) {
         const userData = { email, password };
 
-        dispatch(loginUserAsync({ ...userData }));
+        dispatch(loginUserAsync({ user: userData, toast }));
       }
     } else {
       if (name && email && password && confirmPassword) {
         const userData = { name, email, password, confirmPassword };
 
-        dispatch(registerUserAsync({ ...userData }));
+        dispatch(registerUserAsync({ user: userData, toast }));
       }
     }
   };

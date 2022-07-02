@@ -10,7 +10,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    dispatch(deleteJobAsync(id));
+    dispatch(deleteJobAsync({ jobId: id }));
     dispatch(fetchJobsAsync());
   };
 

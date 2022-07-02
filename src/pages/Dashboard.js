@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
+import Jobs from 'components/Jobs';
+import Alert from 'components/Alert';
+import FormRow from 'components/FormRow';
 import { createJobAsync } from 'redux/jobs';
-import { Alert, FormRow, Jobs } from 'components';
 
 const initialStates = {
   company: '',

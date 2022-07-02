@@ -134,6 +134,10 @@ const Wrapper = styled.section`
     margin-top: 1rem;
   }
 
+  .btn:disabled {
+    cursor: not-allowed;
+  }
+
   .member-btn {
     background: transparent;
     border: transparent;

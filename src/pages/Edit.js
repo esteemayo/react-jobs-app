@@ -3,10 +3,16 @@ import { useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { editJob } from 'redux/apiCalls';
 import FormRow from 'components/FormRow';
 import Spinner from 'components/Spinner';
-import { fetchSingleJobBySlugAsync } from 'redux/jobs';
+import { fetchSingleJobBySlugAsync, updateJobAsync } from 'redux/jobs';
+
+const initialState = {
+  id: null,
+  company: '',
+  position: '',
+  status: '',
+};
 
 const Edit = () => {
   const { pathname } = useLocation();
@@ -20,12 +26,7 @@ const Edit = () => {
     singleJobError: error,
   } = useSelector((state) => state.jobs);
 
-  const [values, setValues] = useState({
-    id: null,
-    company: '',
-    position: '',
-    status: '',
-  });
+  const [values, setValues] = useState(initialState);
 
   useEffect(() => {
     dispatch(fetchSingleJobBySlugAsync(path));
@@ -42,13 +43,14 @@ const Edit = () => {
     setValues({ ...values, [input.name]: input.value });
   };
 
+  const { id, company, position, status } = values;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { id, company, position, status } = values;
 
     if (company && position) {
       const updJob = { company, position, status };
-      editJob(id, { ...updJob }, dispatch);
+      dispatch(updateJobAsync({ jobId: id, job: updJob }));
     }
   };
 
@@ -82,13 +84,13 @@ const Edit = () => {
           <FormRow
             type='name'
             name='position'
-            value={values.position}
+            value={position}
             handleChange={handleChange}
           />
           <FormRow
             type='name'
             name='company'
-            value={values.company}
+            value={company}
             handleChange={handleChange}
           />
           <div className='form-row'>
@@ -97,7 +99,7 @@ const Edit = () => {
             </label>
             <select
               name='status'
-              value={values.status}
+              value={status}
               onChange={handleChange}
               className='status'
             >

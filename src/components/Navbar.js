@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
 
 import logo from 'assets/logo.svg';
-import { logout } from 'redux/user';
+import { setLogout } from 'redux/user';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
               <button
                 className='dropdown-btn'
-                onClick={() => dispatch(logout())}
+                onClick={() => dispatch(setLogout())}
               >
                 logout
               </button>

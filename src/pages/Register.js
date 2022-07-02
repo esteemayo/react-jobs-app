@@ -29,9 +29,10 @@ const Register = () => {
     setValues({ ...values, [input.name]: input.value });
   };
 
+  const { name, email, password, confirmPassword, isMember } = values;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, password, confirmPassword, isMember } = values;
 
     if (isMember) {
       if (email && password) {
@@ -54,12 +55,12 @@ const Register = () => {
         {showAlert && <Alert />}
         <form className='form' onSubmit={handleSubmit}>
           <img src={logo} alt='jobio' className='logo' />
-          <h4>{values.isMember ? 'Login' : 'Register'}</h4>
-          {!values.isMember && (
+          <h4>{isMember ? 'Login' : 'Register'}</h4>
+          {!isMember && (
             <FormRow
               type='name'
               name='name'
-              value={values.name}
+              value={name}
               handleChange={handleChange}
             />
           )}
@@ -67,22 +68,22 @@ const Register = () => {
           <FormRow
             type='email'
             name='email'
-            value={values.email}
+            value={email}
             handleChange={handleChange}
           />
 
           <FormRow
             type='password'
             name='password'
-            value={values.password}
+            value={password}
             handleChange={handleChange}
           />
 
-          {!values.isMember && (
+          {!isMember && (
             <FormRow
               type='password'
               name='confirmPassword'
-              value={values.confirmPassword}
+              value={confirmPassword}
               handleChange={handleChange}
             />
           )}
@@ -91,10 +92,10 @@ const Register = () => {
             {isFetching ? 'Fetching User...' : 'Submit'}
           </button>
           <p>
-            {values.isMember ? 'Not a member yet?' : 'Already a member?'}
+            {isMember ? 'Not a member yet?' : 'Already a member?'}
 
             <button type='button' onClick={toggleMember} className='member-btn'>
-              {values.isMember ? 'Register' : 'Login'}
+              {isMember ? 'Register' : 'Login'}
             </button>
           </p>
         </form>

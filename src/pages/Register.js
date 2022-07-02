@@ -7,17 +7,19 @@ import Alert from 'components/Alert';
 import FormRow from 'components/FormRow';
 import { loginUserAsync, registerUserAsync } from 'redux/user';
 
+const initialState = {
+  name: '',
+  email: '',
+  password: '',
+  isMember: true,
+  confirmPassword: '',
+};
+
 const Register = () => {
   const dispatch = useDispatch();
   const { isFetching, showAlert } = useSelector((state) => state.user);
 
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    password: '',
-    isMember: true,
-    confirmPassword: '',
-  });
+  const [values, setValues] = useState(initialState);
 
   const toggleMember = () => {
     setValues({ ...values, isMember: !values.isMember });

@@ -96,6 +96,10 @@ const Wrapper = styled.section`
       padding: 0.75rem;
     }
 
+    .btn:disabled {
+      cursor: not-allowed;
+    }
+
     @media (min-width: 776px) {
       grid-template-columns: 1fr 1fr auto;
 

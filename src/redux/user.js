@@ -7,6 +7,7 @@ const initialState = {
   user: null,
   isFetching: false,
   showAlert: false,
+  error: '',
 };
 
 const tokenKey = 'jwt';
@@ -49,13 +50,15 @@ export const loginUserAsync = createAsyncThunk(
   }
 );
 
-export const logout = createAsyncThunk('user/logout', () => {
-  return localStorage.removeItem(tokenKey);
-});
-
 export const userSlice = createSlice({
   name: 'user',
   initialState,
+  reducers: {
+    setLogout: (state) => {
+      localStorage.removeItem(tokenKey);
+      state.user = null;
+    },
+  },
   extraReducers: {
     [registerUserAsync.pending]: (state) => {
       state.isFetching = true;
@@ -65,10 +68,11 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.user = payload;
     },
-    [registerUserAsync.rejected]: (state) => {
+    [registerUserAsync.rejected]: (state, { payload }) => {
       state.isFetching = false;
       state.user = null;
       state.showAlert = true;
+      state.error = payload.message;
     },
     [loginUserAsync.pending]: (state) => {
       state.isFetching = true;
@@ -78,17 +82,15 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.user = payload;
     },
-    [loginUserAsync.rejected]: (state) => {
+    [loginUserAsync.rejected]: (state, { payload }) => {
       state.isFetching = false;
       state.user = null;
       state.showAlert = true;
-    },
-    [logout.fulfilled]: (state) => {
-      state.isFetching = false;
-      state.user = null;
-      state.showAlert = false;
+      state.error = payload.message;
     },
   },
 });
+
+export const { setLogout } = userSlice.actions;
 
 export default userSlice.reducer;

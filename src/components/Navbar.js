@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
 
 import logo from 'assets/logo.svg';
-import { setLogout } from 'redux/user';
+import { setLogout } from 'redux/users/userSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();

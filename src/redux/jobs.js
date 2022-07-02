@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import * as jobService from 'services/jobService';
+import * as jobAPI from 'services/jobService';
 
 export const fetchJobsAsync = createAsyncThunk(
   'jobs/fetchJobs',
@@ -7,7 +7,7 @@ export const fetchJobsAsync = createAsyncThunk(
     try {
       const {
         data: { jobs },
-      } = await jobService.getJobs();
+      } = await jobAPI.getJobs();
       return jobs;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -21,7 +21,7 @@ export const fetchSingleJobBySlugAsync = createAsyncThunk(
     try {
       const {
         data: { job },
-      } = await jobService.getJobBySlug(slug);
+      } = await jobAPI.getJobBySlug(slug);
       return job;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -35,7 +35,7 @@ export const createJobAsync = createAsyncThunk(
     try {
       const {
         data: { job },
-      } = await jobService.createJob({ ...newJob });
+      } = await jobAPI.createJob({ ...newJob });
       toast.success('Job successfully created');
       return job;
     } catch (err) {
@@ -50,7 +50,7 @@ export const updateJobAsync = createAsyncThunk(
     try {
       const {
         data: { job: updJob },
-      } = await jobService.updateJob(jobId, job);
+      } = await jobAPI.updateJob(jobId, job);
       return updJob;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -62,7 +62,7 @@ export const deleteJobAsync = createAsyncThunk(
   'jobs/deleteJob',
   async ({ jobId, toast }, { rejectWithValue }) => {
     try {
-      await jobService.deleteJob(jobId);
+      await jobAPI.deleteJob(jobId);
       toast.success('Job Deleted Successfully');
     } catch (err) {
       return rejectWithValue(err.response.data);

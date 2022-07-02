@@ -8,7 +8,7 @@ import Alert from 'components/Alert';
 import FormRow from 'components/FormRow';
 import { createJobAsync } from 'redux/jobs';
 
-const initialStates = {
+const initialState = {
   company: '',
   position: '',
 };
@@ -16,7 +16,7 @@ const initialStates = {
 const Dashboard = () => {
   const dispatch = useDispatch();
   const { showAlert, isLoading } = useSelector((state) => state.jobs);
-  const [values, setValues] = useState(initialStates);
+  const [values, setValues] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

@@ -1,27 +1,34 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { createJobAsync } from 'redux/jobs';
 import { Alert, FormRow, Jobs } from 'components';
 
+const initialStates = {
+  company: '',
+  position: '',
+};
+
 const Dashboard = () => {
   const dispatch = useDispatch();
   const { showAlert, isLoading } = useSelector((state) => state.jobs);
-  const [values, setValues] = useState({ company: '', position: '' });
+  const [values, setValues] = useState(initialStates);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setValues({ ...values, [name]: value });
   };
 
+  const { company, position } = values;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { company, position } = values;
 
     if (company && position) {
       const newJob = { company, position };
-      dispatch(createJobAsync({ ...newJob }));
+      dispatch(createJobAsync({ newJob, toast }));
       setValues({ company: '', position: '' });
     }
   };
@@ -33,7 +40,7 @@ const Dashboard = () => {
         <FormRow
           type='name'
           name='position'
-          value={values.position}
+          value={position}
           handleChange={handleChange}
           horizontal
           placeholder='Position'
@@ -42,7 +49,7 @@ const Dashboard = () => {
         <FormRow
           type='name'
           name='company'
-          value={values.company}
+          value={company}
           handleChange={handleChange}
           horizontal
           placeholder='Company'

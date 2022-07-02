@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import * as userAPI from 'services/userService';
 
-const initialStateValue = {
+const initialState = {
   user: null,
   isFetching: false,
   showAlert: false,
@@ -19,7 +19,7 @@ if (token) {
   if (expiredToken < Date.now()) {
     localStorage.removeItem(tokenKey);
   } else {
-    initialStateValue.user = decodedToken;
+    initialState.user = decodedToken;
   }
 }
 
@@ -55,7 +55,7 @@ export const logout = createAsyncThunk('user/logout', () => {
 
 export const userSlice = createSlice({
   name: 'user',
-  initialState: initialStateValue,
+  initialState,
   extraReducers: {
     [registerUserAsync.pending]: (state) => {
       state.isFetching = true;

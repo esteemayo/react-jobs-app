@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Job from './Job';
@@ -9,11 +10,15 @@ import { fetchJobsAsync } from 'redux/jobs';
 
 const Jobs = () => {
   const dispatch = useDispatch();
-  const { jobs, isLoading } = useSelector((state) => state.jobs);
+  const { jobs, error, isLoading } = useSelector((state) => state.jobs);
 
   useEffect(() => {
     dispatch(fetchJobsAsync());
   }, [dispatch]);
+
+  useEffect(() => {
+    error && toast.error(error);
+  }, [error]);
 
   if (isLoading) {
     return <Spinner />;

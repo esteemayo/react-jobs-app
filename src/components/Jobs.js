@@ -2,8 +2,10 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
+import Job from './Job';
+import Spinner from './Spinner';
+import JobColumns from './JobColumns';
 import { fetchJobsAsync } from 'redux/jobs';
-import { Job, JobColumns, Spinner } from 'components';
 
 const Jobs = () => {
   const dispatch = useDispatch();

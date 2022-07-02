@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className='btn-container'>
             <button className='btn' onClick={() => setShowLogout(!showLogout)}>
               <FaUserCircle />
-              {user?.name || user?.user?.name}
+              {user?.name}
               <FaCaretDown />
             </button>
             <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>

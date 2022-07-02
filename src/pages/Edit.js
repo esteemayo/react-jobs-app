@@ -4,7 +4,8 @@ import { useLocation, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { editJob } from 'redux/apiCalls';
-import { FormRow, Spinner } from 'components';
+import FormRow from 'components/FormRow';
+import Spinner from 'components/Spinner';
 import { fetchSingleJobBySlugAsync } from 'redux/jobs';
 
 const Edit = () => {

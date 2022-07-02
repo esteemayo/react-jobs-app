@@ -1,17 +1,18 @@
 import Moment from 'react-moment';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
-import { deleteJobAsync, fetchJobsAsync } from 'redux/jobs';
+import { deleteJobAsync } from 'redux/jobs';
 
 const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    dispatch(deleteJobAsync({ jobId: id }));
-    dispatch(fetchJobsAsync());
+    if (window.confirm('Are you sure?'))
+      dispatch(deleteJobAsync({ jobId: id, toast }));
   };
 
   return (

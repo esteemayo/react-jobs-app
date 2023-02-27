@@ -46,7 +46,7 @@ const Register = () => {
       if (name && email && password && confirmPassword) {
         const userData = { name, email, password, confirmPassword };
 
-        dispatch(registerUserAsync({ user: userData, toast }));
+        dispatch(registerUser({ user: userData, toast }));
       }
     }
   };

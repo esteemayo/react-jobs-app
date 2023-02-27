@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Alert from 'components/Alert';
+import logo from 'assets/logo.svg';
 import FormRow from 'components/FormRow';
 import { loginUserAsync, registerUserAsync, reset } from 'redux/users/userSlice';
 

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import FormRow from 'components/FormRow';
 import Spinner from 'components/Spinner';
-import { fetchSingleJobBySlugAsync, updateJobAsync } from 'redux/jobs/jobSlice';
+import { fetchSingleJobBySlug, updateJob } from 'redux/jobs/jobSlice';
 
 const initialState = {
   id: null,

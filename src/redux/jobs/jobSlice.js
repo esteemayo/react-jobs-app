@@ -114,7 +114,7 @@ export const jobSlice = createSlice({
       state.isLoading = false;
       state.error = payload.message;
     },
-    [fetchSingleJobBySlugAsync.pending]: (state) => {
+    [fetchJob.pending]: (state) => {
       state.isLoading = true;
       state.showAlert = false;
       state.editComplete = false;

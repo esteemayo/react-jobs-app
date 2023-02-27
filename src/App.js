@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Edit, Error, Home, Dashboard, Register, SharedLayout } from 'pages';
 import ProtectedRoute from 'utils/ProtectedRoute';
-import AuthRoute from 'utils/AuthRoute';
 
 function App() {
   return (

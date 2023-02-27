@@ -110,7 +110,7 @@ export const jobSlice = createSlice({
       state.isLoading = false;
       state.jobs = payload;
     },
-    [fetchJobsAsync.rejected]: (state, { payload }) => {
+    [fetchJobs.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.error = payload.message;
     },

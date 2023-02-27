@@ -27,7 +27,8 @@ const Register = () => {
   };
 
   const handleChange = ({ target: input }) => {
-    setValues({ ...values, [input.name]: input.value });
+    const { name, value } = input;
+    setValues((prev) => ({ ...prev, [name]: value }));
   };
 
   const { name, email, password, confirmPassword, isMember } = values;

@@ -80,7 +80,7 @@ export const userSlice = createSlice({
       state.showAlert = true;
       state.error = payload.message;
     },
-    [registerUserAsync.pending]: (state) => {
+    [registerUser.pending]: (state) => {
       state.isFetching = true;
       state.showAlert = false;
     },

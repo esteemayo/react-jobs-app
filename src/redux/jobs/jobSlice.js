@@ -58,7 +58,7 @@ export const updateJob = createAsyncThunk(
   }
 );
 
-export const deleteJobAsync = createAsyncThunk(
+export const deleteJob = createAsyncThunk(
   'jobs/deleteJob',
   async ({ jobId, toast }, { rejectWithValue }) => {
     try {
@@ -168,7 +168,7 @@ export const jobSlice = createSlice({
       state.showAlert = true;
       state.error = payload.message;
     },
-    [deleteJobAsync.pending]: (state) => {
+    [deleteJob.pending]: (state) => {
       state.isLoading = true;
     },
     [deleteJobAsync.fulfilled]: (state, { meta }) => {

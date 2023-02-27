@@ -123,7 +123,7 @@ export const jobSlice = createSlice({
       state.isLoading = false;
       state.editItem = payload;
     },
-    [fetchSingleJobBySlugAsync.rejected]: (state, { payload }) => {
+    [fetchJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.editItem = '';
       state.singleJobError = true;

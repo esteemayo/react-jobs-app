@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
+    "caniuse-lite": "^1.0.30001458",
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",

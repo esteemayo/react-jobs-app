@@ -54,6 +54,11 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
+    reset: (state) => {
+      state.isFetching = false;
+      state.showAlert = false;
+      state.error = '';
+    },
     setLogout: (state) => {
       localStorage.removeItem(tokenKey);
       state.user = null;

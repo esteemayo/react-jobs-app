@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Alert from 'components/Alert';
 import logo from 'assets/logo.svg';
-import { loginUserAsync, registerUserAsync, reset } from 'redux/users/userSlice';
+import { loginUser, registerUserAsync, reset } from 'redux/users/userSlice';
 import FormRow from 'components/FormRow';
 
 const initialState = {

@@ -182,7 +182,7 @@ export const jobSlice = createSlice({
         state.jobs = state.jobs.filter((job) => job._id !== jobId);
       }
     },
-    [deleteJobAsync.rejected]: (state, { payload }) => {
+    [deleteJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.error = payload.message;
     },

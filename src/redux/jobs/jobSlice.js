@@ -106,7 +106,7 @@ export const jobSlice = createSlice({
       state.showAlert = false;
       state.editComplete = false;
     },
-    [fetchJobsAsync.fulfilled]: (state, { payload }) => {
+    [fetchJobs.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.jobs = payload;
     },

@@ -44,7 +44,7 @@ export const createJob = createAsyncThunk(
   }
 );
 
-export const updateJobAsync = createAsyncThunk(
+export const updateJob = createAsyncThunk(
   'jobs/updateJob',
   async ({ jobId, job }, { rejectWithValue }) => {
     try {

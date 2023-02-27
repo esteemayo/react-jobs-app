@@ -65,7 +65,7 @@ export const userSlice = createSlice({
     },
   },
   extraReducers: {
-    [loginUserAsync.pending]: (state) => {
+    [loginUser.pending]: (state) => {
       state.isFetching = true;
       state.showAlert = false;
     },

@@ -148,7 +148,7 @@ export const jobSlice = createSlice({
       state.showAlert = false;
       state.editComplete = false;
     },
-    [updateJobAsync.fulfilled]: (state, { meta, payload }) => {
+    [updateJob.fulfilled]: (state, { meta, payload }) => {
       state.isLoading = false;
       state.editComplete = true;
 
@@ -162,7 +162,7 @@ export const jobSlice = createSlice({
 
       state.editItem = payload;
     },
-    [updateJobAsync.rejected]: (state, { payload }) => {
+    [updateJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.editComplete = true;
       state.showAlert = true;

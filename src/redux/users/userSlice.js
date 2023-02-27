@@ -20,7 +20,7 @@ export const registerUserAsync = createAsyncThunk(
   'user/register',
   async ({ user, toast }, { rejectWithValue }) => {
     try {
-      const { data } = await userAPI.registerUser({ ...user });
+      const { data } = await userAPI.register({ ...user });
       toast.success('Registration successful');
       return data;
     } catch (err) {

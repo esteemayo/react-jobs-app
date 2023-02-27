@@ -12,7 +12,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure?'))
-      dispatch(deleteJobAsync({ jobId: id, toast }));
+      dispatch(deleteJob({ jobId: id, toast }));
   };
 
   return (

@@ -51,6 +51,10 @@ const Register = () => {
     }
   };
 
+  useEffect(() => {
+    return () => dispatch(reset());
+  }, [dispatch]);
+
   return (
     <Wrapper className='page full-page'>
       <div className='container'>

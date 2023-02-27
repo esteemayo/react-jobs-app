@@ -138,7 +138,7 @@ export const jobSlice = createSlice({
       state.isLoading = false;
       state.jobs.unshift(payload);
     },
-    [createJobAsync.rejected]: (state, { payload }) => {
+    [createJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.showAlert = true;
       state.error = payload.message;

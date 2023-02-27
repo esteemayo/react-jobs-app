@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
-import { deleteJobAsync } from 'redux/jobs/jobSlice';
+import { deleteJob } from 'redux/jobs/jobSlice';
 
 const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   const dispatch = useDispatch();

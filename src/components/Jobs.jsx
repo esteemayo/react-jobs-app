@@ -13,7 +13,7 @@ const Jobs = () => {
   const { jobs, error, isLoading } = useSelector((state) => state.jobs);
 
   useEffect(() => {
-    dispatch(fetchJobsAsync());
+    dispatch(fetchJobs());
   }, [dispatch]);
 
   useEffect(() => {

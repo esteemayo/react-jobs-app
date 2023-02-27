@@ -119,7 +119,7 @@ export const jobSlice = createSlice({
       state.showAlert = false;
       state.editComplete = false;
     },
-    [fetchSingleJobBySlugAsync.fulfilled]: (state, { payload }) => {
+    [fetchJob.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.editItem = payload;
     },

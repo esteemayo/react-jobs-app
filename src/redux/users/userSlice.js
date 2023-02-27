@@ -84,7 +84,7 @@ export const userSlice = createSlice({
       state.isFetching = true;
       state.showAlert = false;
     },
-    [registerUserAsync.fulfilled]: (state, { payload }) => {
+    [registerUser.fulfilled]: (state, { payload }) => {
       state.isFetching = false;
       localStorage.setItem(tokenKey, payload.token);
       state.user = payload;

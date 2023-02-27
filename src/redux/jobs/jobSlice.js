@@ -171,7 +171,7 @@ export const jobSlice = createSlice({
     [deleteJob.pending]: (state) => {
       state.isLoading = true;
     },
-    [deleteJobAsync.fulfilled]: (state, { meta }) => {
+    [deleteJob.fulfilled]: (state, { meta }) => {
       state.isLoading = false;
 
       const {

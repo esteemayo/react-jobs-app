@@ -7,7 +7,6 @@ import FormRow from 'components/FormRow';
 import Spinner from 'components/Spinner';
 import { fetchSingleJobBySlug, updateJob } from 'redux/jobs/jobSlice';
 
-
 const initialState = {
   id: null,
   company: '',

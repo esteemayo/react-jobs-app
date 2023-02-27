@@ -29,7 +29,7 @@ const Edit = () => {
   const [values, setValues] = useState(initialState);
 
   useEffect(() => {
-    dispatch(fetchSingleJobBySlug(path));
+    dispatch(fetchJob(path));
   }, [dispatch, path]);
 
   useEffect(() => {

@@ -15,7 +15,7 @@ export const fetchJobs = createAsyncThunk(
   }
 );
 
-export const fetchSingleJobBySlugAsync = createAsyncThunk(
+export const fetchJob = createAsyncThunk(
   'jobs/fetchSingleJobBySlug',
   async (slug, { rejectWithValue }) => {
     try {

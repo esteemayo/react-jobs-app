@@ -7,7 +7,7 @@ export const loginUserAsync = createAsyncThunk(
   'user/login',
   async ({ user, toast }, { rejectWithValue }) => {
     try {
-      const { data } = await userAPI.loginUser({ ...user });
+      const { data } = await userAPI.login({ ...user });
       toast.success('Login successful');
       return data;
     } catch (err) {

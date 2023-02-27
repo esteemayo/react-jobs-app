@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import * as userAPI from 'services/userService';
 
-export const loginUserAsync = createAsyncThunk(
+export const loginUser = createAsyncThunk(
   'user/login',
   async ({ user, toast }, { rejectWithValue }) => {
     try {

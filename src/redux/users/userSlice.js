@@ -98,6 +98,6 @@ export const userSlice = createSlice({
   },
 });
 
-export const { setLogout } = userSlice.actions;
+export const { reset, setLogout } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -7,6 +7,7 @@ import FormRow from 'components/FormRow';
 import Spinner from 'components/Spinner';
 import { fetchSingleJobBySlug, updateJob } from 'redux/jobs/jobSlice';
 
+
 const initialState = {
   id: null,
   company: '',
@@ -50,7 +51,7 @@ const Edit = () => {
 
     if (company && position) {
       const updJob = { company, position, status };
-      dispatch(updateJobAsync({ jobId: id, job: updJob }));
+      dispatch(updateJob({ jobId: id, job: updJob }));
     }
   };
 

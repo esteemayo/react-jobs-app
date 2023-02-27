@@ -3,10 +3,10 @@ import http from './httpService';
 const tokenKey = 'jwt';
 const apiEndpoint = '/users';
 
-export const registerUser = (userData) =>
+export const register = (userData) =>
   http.post(`${apiEndpoint}/register`, userData);
 
-export const loginUser = (userData) =>
+export const login = (userData) =>
   http.post(`${apiEndpoint}/login`, userData);
 
 export const getJwt = () => localStorage.getItem(tokenKey);

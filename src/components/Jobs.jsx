@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Job from './Job';
 import Spinner from './Spinner';
 import JobColumns from './JobColumns';
-import { fetchJobsAsync } from 'redux/jobs/jobSlice';
+import { fetchJobs } from 'redux/jobs/jobSlice';
 
 const Jobs = () => {
   const dispatch = useDispatch();

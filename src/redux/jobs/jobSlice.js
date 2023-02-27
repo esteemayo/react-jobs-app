@@ -101,7 +101,7 @@ export const jobSlice = createSlice({
     },
   },
   extraReducers: {
-    [fetchJobsAsync.pending]: (state) => {
+    [fetchJobs.pending]: (state) => {
       state.isLoading = true;
       state.showAlert = false;
       state.editComplete = false;

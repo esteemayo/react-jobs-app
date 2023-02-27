@@ -134,7 +134,7 @@ export const jobSlice = createSlice({
       state.showAlert = false;
       state.editComplete = false;
     },
-    [createJobAsync.fulfilled]: (state, { payload }) => {
+    [createJob.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.jobs.unshift(payload);
     },

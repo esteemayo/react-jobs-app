@@ -23,7 +23,7 @@ const Register = () => {
   const [values, setValues] = useState(initialState);
 
   const toggleMember = () => {
-    setValues({ ...values, isMember: !values.isMember });
+    setValues((prev) => ({ ...prev, isMember: !prev.isMember }));
   };
 
   const handleChange = ({ target: input }) => {

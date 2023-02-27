@@ -74,7 +74,7 @@ export const userSlice = createSlice({
       localStorage.setItem(tokenKey, payload.token);
       state.user = payload;
     },
-    [loginUserAsync.rejected]: (state, { payload }) => {
+    [loginUser.rejected]: (state, { payload }) => {
       state.isFetching = false;
       state.user = null;
       state.showAlert = true;

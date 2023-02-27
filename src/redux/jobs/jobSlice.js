@@ -129,7 +129,7 @@ export const jobSlice = createSlice({
       state.singleJobError = true;
       state.error = payload.message;
     },
-    [createJobAsync.pending]: (state) => {
+    [createJob.pending]: (state) => {
       state.isLoading = true;
       state.showAlert = false;
       state.editComplete = false;

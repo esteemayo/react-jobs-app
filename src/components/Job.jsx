@@ -69,6 +69,7 @@ const StatusContainer = styled.span`
   letter-spacing: var(--letterSpacing);
   text-align: center;
   color: ${({ status, theme }) => status === 'interview' && theme.textInterview};
+  color: ${({ status, theme }) => status === 'declined' && theme.textDeclined};
   /* color: ${({ status }) => setStatusColor(status)};
   background: ${({ status }) => setStatusBackground(status)}; */
 `;

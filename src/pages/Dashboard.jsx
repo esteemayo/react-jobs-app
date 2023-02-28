@@ -106,6 +106,7 @@ const Wrapper = styled.section`
 
     .btn {
       padding: 0.75rem;
+      background-color: ${({ theme }) => theme.bgBtn};
     }
 
     .btn:disabled {

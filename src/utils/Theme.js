@@ -5,7 +5,7 @@ export const darkTheme = {
   textSoft: '#aaaaaa',
   soft: '#373737',
   colorOutline: 'var(--grey-100)',
-  colorBorder: 'var(--grey-100)',
+  colorBorder: 'rgb(71, 71, 71)',
 };
 
 export const lightTheme = {

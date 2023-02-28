@@ -54,7 +54,7 @@ const Wrapper = styled.div`
     display: none;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     .container {
       grid-template-columns: 1fr 1fr;
       column-gap: 6rem;

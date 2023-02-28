@@ -101,6 +101,7 @@ const Wrapper = styled.section`
 
     .form-input:focus {
       outline: 1px solid var(--primary-500);
+      }
     }
 
     .form-row {

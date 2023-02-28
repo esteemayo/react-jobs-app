@@ -30,6 +30,7 @@ export const registerUser = createAsyncThunk(
   }
 );
 
+const token = userAPI.getJwt();
 const user = getFromStorage(tokenKey);
 
 const initialState = {

@@ -84,6 +84,15 @@ export const jobSlice = createSlice({
   name: 'jobs',
   initialState,
   reducers: {
+    reset: (state) => {
+      state.jobs = [];
+      state.isLoading = false;
+      state.showAlert = false;
+      state.editItem = null;
+      state.singleJobError = false;
+      state.editComplete = false;
+      state.error = '';
+    },
     updateStart: (state) => {
       state.isLoading = true;
       state.showAlert = false;

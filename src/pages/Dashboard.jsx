@@ -26,6 +26,10 @@ const Dashboard = () => {
 
   const { company, position } = values;
 
+  const handleClear = () => {
+    setValues(initialState);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 

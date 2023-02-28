@@ -30,6 +30,7 @@ const Wrapper = styled.section`
     letter-spacing: var(--letterSpacing);
     font-size: var(--small-text);
     font-weight: 600;
+  
     .action {
       margin-left: 1rem;
     }

@@ -58,9 +58,9 @@ const setStatusColor = (status) => {
 };
 
 const setStatusBackground = (status) => {
-  if (status === 'interview') return `${({theme}) => theme.bgInterview}`;
-  if (status === 'declined') return `${({theme}) => theme.bgDeclined}`;
-  return '#f7f3d7';
+  if (status === 'interview') return `${({ theme }) => theme.bgInterview}`;
+  if (status === 'declined') return `${({ theme }) => theme.bgDeclined}`;
+  return `${({ theme }) => theme.bgPending}`;
 };
 
 const StatusContainer = styled.span`

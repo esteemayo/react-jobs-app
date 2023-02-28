@@ -107,6 +107,7 @@ const Wrapper = styled.section`
     .btn {
       padding: 0.75rem;
       background-color: ${({ theme }) => theme.bgBtn};
+      outline-color: ${({ theme }) => theme.colorOutline};
       
       &:hover {
         background-color: ${({ theme }) => theme.bgBtnHover};

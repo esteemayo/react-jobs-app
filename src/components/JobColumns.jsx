@@ -15,7 +15,7 @@ const JobColumns = () => {
 const Wrapper = styled.section`
   display: none;
   
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     display: block;
     background: ${({ theme }) => theme.bgColumn};
     color: ${({ theme }) => theme.textColumn};

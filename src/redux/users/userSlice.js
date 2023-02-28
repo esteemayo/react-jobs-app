@@ -39,8 +39,6 @@ const initialState = {
   error: '',
 };
 
-const token = localStorage.getItem(tokenKey);
-
 if (token) {
   const decodedToken = jwtDecode(token);
   const expiredToken = decodedToken.exp * 1000;

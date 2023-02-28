@@ -3,6 +3,7 @@ import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import { useDispatch } from 'react-redux';
 
 import { deleteJob } from 'redux/jobs/jobSlice';
 

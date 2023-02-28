@@ -16,7 +16,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   };
 
   return (
-    <article className='job'>
+    <Container className='job'>
       <span className='icon'>{company.charAt(0)}</span>
       <span className='position'>{position.toLowerCase()}</span>
       <span className='company'>{company}</span>
@@ -38,9 +38,13 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
           <FaTrash />
         </button>
       </div>
-    </article>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  
+`;
 
 const setStatusColor = (status) => {
   if (status === 'interview') return '#0f5132';

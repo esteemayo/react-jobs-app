@@ -30,6 +30,7 @@ const FormRow = ({
 const Container = styled.div`
   .form-input {
     background-color: ${({ theme }) => theme.bg};
+    border: 1px solid ${({ theme }) => theme.colorBorder};
     
     &:focus {
       outline-color: ${({ theme }) => theme.colorBorder};

@@ -52,15 +52,15 @@ const Container = styled.div`
 `;
 
 const setStatusColor = (status) => {
-  if (status === 'interview') return `${({ theme }) => theme.textInterview}`;
-  if (status === 'declined') return `${({ theme }) => theme.textDeclined}`;
-  return `${({ theme }) => theme.pending}`;
+  if (status === 'interview') return '#0f5132';
+  if (status === 'declined') return '#842029';
+  return '#927238';
 };
 
 const setStatusBackground = (status) => {
-  if (status === 'interview') return `${({ theme }) => theme.bgInterview}`;
-  if (status === 'declined') return `${({ theme }) => theme.bgDeclined}`;
-  return `${({ theme }) => theme.bgPending}`;
+  if (status === 'interview') return '#d1e7dd';
+  if (status === 'declined') return '#f8d7da';
+  return '#f7f3d7';
 };
 
 const StatusContainer = styled.span`

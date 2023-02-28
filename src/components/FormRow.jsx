@@ -31,6 +31,10 @@ const Container = styled.div`
   .form-input {
     background-color: ${({ theme }) => theme.bg};
     outline-color: ${({ theme }) => theme.colorOutline};
+    
+    &:focus {
+      outline-color: ${({ theme }) => theme.colorBorder};
+    }
   }
 `;
 

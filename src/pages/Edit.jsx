@@ -15,6 +15,7 @@ const initialState = {
 };
 
 const Edit = () => {
+  const dispatch = useDispatch();
   const { pathname } = useLocation();
   const path = pathname.split('/')[2];
 

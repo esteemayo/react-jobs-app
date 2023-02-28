@@ -32,7 +32,6 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
         </Link>
         <button
           className=' delete-btn'
-          type='button'
           onClick={() => handleDelete(id)}
         >
           <FaTrash />

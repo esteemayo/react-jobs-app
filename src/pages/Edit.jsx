@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import FormRow from 'components/FormRow';
-import Spinner from 'components/Spinner';
 import { fetchJob, updateJob } from 'redux/jobs/jobSlice';
 
 const initialState = {

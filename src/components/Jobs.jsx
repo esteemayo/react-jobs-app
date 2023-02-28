@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { toast } from 'react-toastify';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Job from './Job';

@@ -15,5 +15,5 @@ export const lightTheme = {
   textSoft: '#606060',
   soft: '#f5f5f5',
   colorOutline: 'var(--primary-500)',
-  colorBorder: 'var(--primary-500)',
+  colorBorder: 'var(--primary-200)',
 };

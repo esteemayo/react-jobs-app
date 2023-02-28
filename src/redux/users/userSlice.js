@@ -2,7 +2,7 @@ import jwtDecode from 'jwt-decode';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import * as userAPI from 'services/userService';
-import { removeFromStorage } from 'utils';
+import { removeFromStorage, tokenKey } from 'utils';
 
 export const loginUser = createAsyncThunk(
   'user/login',

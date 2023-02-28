@@ -68,7 +68,7 @@ const StatusContainer = styled.span`
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   text-align: center;
-  color: ${(props) => setStatusColor(props.status)};
+  color: ${({ status }) => setStatusColor(status)};
   background: ${(props) => setStatusBackground(props.status)};
 `;
 

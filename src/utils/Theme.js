@@ -7,6 +7,7 @@ export const darkTheme = {
   colorOutline: 'var(--grey-100)',
   colorBorder: 'rgb(71, 71, 71)',
   crInput: 'rgb(156, 156, 156)',
+  bgColumn: 'var( --primary-100)',
 };
 
 export const lightTheme = {
@@ -18,4 +19,5 @@ export const lightTheme = {
   colorOutline: 'var(--primary-500)',
   colorBorder: 'var(--primary-200)',
   crInput: 'var(--primary-500)',
+  bgColumn: 'var(--grey-200)',
 };

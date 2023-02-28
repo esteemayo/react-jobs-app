@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
 import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
 
 import logo from 'assets/logo.svg';

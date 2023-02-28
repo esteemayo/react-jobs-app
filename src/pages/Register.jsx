@@ -141,6 +141,7 @@ const Wrapper = styled.section`
 
   h4 {
     text-align: center;
+    color: ${({ theme }) => theme.text};
   }
 
   p {

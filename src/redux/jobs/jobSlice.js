@@ -93,21 +93,6 @@ export const jobSlice = createSlice({
       state.editComplete = false;
       state.error = '';
     },
-    updateStart: (state) => {
-      state.isLoading = true;
-      state.showAlert = false;
-      state.editComplete = false;
-    },
-    updateSuccess: (state, { payload }) => {
-      state.isLoading = false;
-      state.editComplete = true;
-      state.editItem = payload;
-    },
-    updateError: (state) => {
-      state.isLoading = false;
-      state.editComplete = true;
-      state.showAlert = true;
-    },
   },
   extraReducers: {
     [fetchJobs.pending]: (state) => {

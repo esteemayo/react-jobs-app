@@ -1,4 +1,3 @@
-import Moment from 'react-moment';
 import styled from 'styled-components';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';

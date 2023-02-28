@@ -17,6 +17,7 @@ const Navbar = () => {
     <Wrapper>
       <div className='nav-center'>
         <img src={logo} alt='jobs app' />
+        <div>{darkMode ? 'Light' : 'Dark'} mode</div>
         {user && (
           <div className='btn-container'>
             <button className='btn' onClick={() => setShowLogout(!showLogout)}>

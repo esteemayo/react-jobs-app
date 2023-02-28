@@ -55,6 +55,10 @@ const Edit = () => {
     }
   };
 
+  useEffect(() => {
+    return () => dispatch(reset());
+  }, [dispatch]);
+
   if (isLoading && !editItem) {
     return <Spinner />;
   }

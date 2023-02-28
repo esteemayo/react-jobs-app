@@ -1,7 +1,7 @@
 export const darkTheme = {
   bg: '#0d1117',
   bgLighter: '#161b22',
-  text: 'var(--textColor)',
+  text: 'var(--grey-700)',
   textSoft: '#aaaaaa',
   soft: '#373737',
   colorOutline: 'var(--grey-100)',
@@ -14,7 +14,7 @@ export const darkTheme = {
 export const lightTheme = {
   bg: 'var(--backgroundColor)',
   bgLighter: 'var(--white)',
-  text: '#777777',
+  text: 'var(--textColor)',
   textSoft: '#606060',
   soft: '#f5f5f5',
   colorOutline: 'var(--primary-500)',

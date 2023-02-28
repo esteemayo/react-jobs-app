@@ -69,7 +69,7 @@ const StatusContainer = styled.span`
   letter-spacing: var(--letterSpacing);
   text-align: center;
   color: ${({ status }) => setStatusColor(status)};
-  background: ${(props) => setStatusBackground(props.status)};
+  background: ${({ status }) => setStatusBackground(status)};
 `;
 
 export default Job;

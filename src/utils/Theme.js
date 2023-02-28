@@ -18,6 +18,7 @@ export const darkTheme = {
   textPending: '#f7f3d7',
   textDeclined: '#f8d7da',
   bgBtn: 'var(--primary-700)',
+  bgBtnHover: 'var(--primary-500)',
 };
 
 export const lightTheme = {
@@ -40,4 +41,5 @@ export const lightTheme = {
   textPending: '#927238',
   textDeclined: '#842029',
   bgBtn: 'var(--primary-500)',
+  bgBtnHover: 'var(--primary-700)',
 };

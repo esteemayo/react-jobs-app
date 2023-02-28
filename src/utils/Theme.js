@@ -9,6 +9,7 @@ export const darkTheme = {
   crInput: 'rgb(156, 156, 156)',
   bgColumn: 'var( --primary-200)',
   textColumn: 'var(--grey-700)',
+  colorBBtm: 'var(--grey-800)',
 };
 
 export const lightTheme = {
@@ -22,4 +23,5 @@ export const lightTheme = {
   crInput: 'var(--primary-500)',
   bgColumn: 'var(--grey-200)',
   textColumn: 'var(--grey-500)',
+  colorBBtm: 'var(--grey-200)',
 };

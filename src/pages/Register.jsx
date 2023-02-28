@@ -94,7 +94,11 @@ const Register = () => {
             />
           )}
 
-          <button type='submit' className='btn btn-block' disabled={isFetching}>
+          <button
+            type='submit'
+            className='btn btn-block'
+            disabled={isFetching}
+          >
             {isFetching ? 'Fetching User...' : 'Submit'}
           </button>
           <p>

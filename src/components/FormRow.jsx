@@ -38,7 +38,7 @@ const Container = styled.div`
     color: #999;
     border: 1px solid ${({ theme }) => theme.colorBorder};
     caret-color: ${({ theme }) => theme.crInput};
-    
+
     &:focus {
       outline-color: ${({ theme }) => theme.colorOutline};
     }

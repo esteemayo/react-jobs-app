@@ -125,6 +125,7 @@ const Wrapper = styled.section`
 
     @media (min-width: 48.5em) {
       grid-template-columns: 1fr 1fr auto;
+      column-gap: 2rem;
 
       .btn {
         height: 100%;

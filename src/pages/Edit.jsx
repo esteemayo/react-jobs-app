@@ -45,6 +45,17 @@ const Edit = () => {
   };
 
   useEffect(() => {
+    dispatch(fetchJob(path));
+  }, [dispatch, path]);
+
+  useEffect(() => {
+    if (editItem) {
+      const { _id: id, company, position, status } = editItem;
+      setValues({ id, company, position, status });
+    }
+  }, [editItem]);
+
+  useEffect(() => {
     return () => dispatch(reset());
   }, [dispatch]);
 

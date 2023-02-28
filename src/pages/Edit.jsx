@@ -18,7 +18,6 @@ const Edit = () => {
   const { pathname } = useLocation();
   const path = pathname.split('/')[2];
 
-  const dispatch = useDispatch();
   const {
     editItem,
     isLoading,

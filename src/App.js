@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import AuthRoute from 'utils/AuthRoute';
@@ -61,5 +61,9 @@ function App() {
     </ThemeProvider>
   );
 }
+
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+`;
 
 export default App;

@@ -34,6 +34,9 @@ const Header = styled.h5`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const Header = styled.h5`
   color: #645cff;
   font-size: 2rem;
   margin-top: 1.5rem;

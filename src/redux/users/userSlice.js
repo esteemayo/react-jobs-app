@@ -86,7 +86,7 @@ export const userSlice = createSlice({
     },
     [registerUser.fulfilled]: (state, { payload }) => {
       state.isFetching = false;
-      localStorage.setItem(tokenKey, payload.token);
+      setToStorage(tokenKey, payload);
       state.user = payload;
     },
     [registerUser.rejected]: (state, { payload }) => {

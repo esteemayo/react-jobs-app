@@ -17,7 +17,7 @@ const Wrapper = styled.section`
   
   @media (min-width: 992px) {
     display: block;
-    background: var(--grey-200);
+    background: ${({ theme }) => theme.bgColumn};
     color: var(--grey-500);
     border-top-left-radius: var(--borderRadius);
     border-top-right-radius: var(--borderRadius);

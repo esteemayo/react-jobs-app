@@ -43,6 +43,10 @@ const Wrapper = styled.div`
     .hero-btn{
       background-color: ${({ theme }) => theme.bgBtn};
       color: ${({ theme }) => theme.textBtn};
+      
+      &:hover {
+        background-color: ${({ theme }) => theme.bgBtnHover};
+      }
     }
   }
 

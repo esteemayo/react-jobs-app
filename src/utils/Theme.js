@@ -13,6 +13,7 @@ export const darkTheme = {
   textDate: 'var(--grey-300)',
   bgInterview: '#0f5132',
   bgPending: '#927238',
+  bgDecline: '#842029',
 };
 
 export const lightTheme = {
@@ -30,4 +31,5 @@ export const lightTheme = {
   textDate: 'var(--grey-500)',
   bgInterview: '#d1e7dd',
   bgPending: '#f7f3d7',
+  bgDecline: '#f8d7da',
 };

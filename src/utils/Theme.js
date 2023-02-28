@@ -21,6 +21,7 @@ export const darkTheme = {
   bgBtnHover: 'var(--primary-600)',
   textBtn: 'var(--grey-100)',
   textInfo: 'rgb(156, 156, 156)',
+  box: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
 };
 
 export const lightTheme = {
@@ -46,4 +47,5 @@ export const lightTheme = {
   bgBtnHover: 'var(--primary-700)',
   textBtn: 'var(--white)',
   textInfo: 'var(--grey-900)',
+  box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
 };

@@ -36,6 +36,10 @@ const Dashboard = () => {
     }
   };
 
+  useEffect(() => {
+    return () => dispatch(reset());
+  }, [dispatch]);
+
   return (
     <Wrapper className='page'>
       {showAlert && <Alert />}

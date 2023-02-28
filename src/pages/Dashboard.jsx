@@ -98,7 +98,6 @@ const Wrapper = styled.section`
       &::placeholder {
         color: #bbb;
       }
-    }
 
     .form-input:focus {
       outline: 1px solid var(--primary-500);

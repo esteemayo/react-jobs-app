@@ -23,7 +23,7 @@ const Home = () => {
             Login / Register
           </Link>
         </div>
-        <img src={main} alt='job hunt' className='img main-img' />
+        <img src={main} alt='' className='img main-img' />
       </div>
     </Wrapper>
   );

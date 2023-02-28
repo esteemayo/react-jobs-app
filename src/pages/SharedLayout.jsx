@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 
 import Navbar from 'components/Navbar';

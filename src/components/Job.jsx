@@ -68,8 +68,9 @@ const StatusContainer = styled.span`
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   text-align: center;
-  color: ${({ status }) => setStatusColor(status)};
-  background: ${({ status }) => setStatusBackground(status)};
+  color: ${({ status, theme }) => status === 'interview' && theme.textInterview};
+  /* color: ${({ status }) => setStatusColor(status)};
+  background: ${({ status }) => setStatusBackground(status)}; */
 `;
 
 export default Job;

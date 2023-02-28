@@ -72,6 +72,7 @@ const StatusContainer = styled.span`
   color: ${({ status, theme }) => status === 'declined' && theme.textDeclined};
   color: ${({ status, theme }) => status === 'pending' && theme.textPending};
   background-color: ${({ status, theme }) => status === 'interview' && theme.bgInterview};
+  background-color: ${({ status, theme }) => status === 'declined' && theme.bgDeclined};
   /* color: ${({ status }) => setStatusColor(status)};
   background: ${({ status }) => setStatusBackground(status)}; */
 `;

@@ -6,6 +6,7 @@ export const darkTheme = {
   soft: '#373737',
   colorOutline: 'var(--grey-100)',
   colorBorder: 'rgb(71, 71, 71)',
+  crInput: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -16,4 +17,5 @@ export const lightTheme = {
   soft: '#f5f5f5',
   colorOutline: 'var(--primary-500)',
   colorBorder: 'var(--primary-200)',
+  crInput: 'var(--primary-500)',
 };

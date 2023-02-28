@@ -99,8 +99,8 @@ const Wrapper = styled.section`
         color: #bbb;
       }
 
-    .form-input:focus {
-      outline: 1px solid var(--primary-500);
+      &:focus {
+        outline: 1px solid var(--primary-500);
       }
     }
 

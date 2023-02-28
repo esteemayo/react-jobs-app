@@ -34,6 +34,7 @@ const Container = styled.div`
 
   .form-input {
     background-color: ${({ theme }) => theme.bg};
+    color: #999;
     border: 1px solid ${({ theme }) => theme.colorBorder};
     caret-color: ${({ theme }) => theme.crInput};
     

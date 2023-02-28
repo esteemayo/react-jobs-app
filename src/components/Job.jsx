@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { toast } from 'react-toastify';

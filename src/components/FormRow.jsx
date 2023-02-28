@@ -28,6 +28,9 @@ const FormRow = ({
 };
 
 const Container = styled.div`
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
   background: ${({ theme }) => theme.bg};
 `;
 

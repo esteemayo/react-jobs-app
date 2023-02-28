@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Jobs from 'components/Jobs';
 import Alert from 'components/Alert';
 import FormRow from 'components/FormRow';
-import { createJob } from 'redux/jobs/jobSlice';
+import { createJob, reset } from 'redux/jobs/jobSlice';
 
 const initialState = {
   company: '',

@@ -28,7 +28,7 @@ const FormRow = ({
 };
 
 const Container = styled.div`
-  
+  background: ${({ theme }) => theme.bg};
 `;
 
 export default FormRow;

@@ -155,10 +155,6 @@ ul {
   box-shadow: var(--shadow-3);
 }
 
-.btn:focus {
-  outline: none;
-}
-
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);

@@ -28,6 +28,9 @@ const LoadingToRedirect = () => {
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
+`;
+
+const Header = styled.h5`
   display: flex;
   align-items: center;
   justify-content: center;

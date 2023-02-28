@@ -58,7 +58,7 @@ const setStatusColor = (status) => {
 };
 
 const setStatusBackground = (status) => {
-  if (status === 'interview') return '#d1e7dd';
+  if (status === 'interview') return `${({theme}) => theme.bgInterview}`;
   if (status === 'declined') return '#f8d7da';
   return '#f7f3d7';
 };

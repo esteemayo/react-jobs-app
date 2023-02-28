@@ -44,7 +44,7 @@ const Container = styled.div`
     }
     
     &:focus {
-      outline-color: ${({ theme }) => theme.colorOutline};
+      outline: 1px solid ${({ theme }) => theme.colorOutline};
     }
   }
 `;

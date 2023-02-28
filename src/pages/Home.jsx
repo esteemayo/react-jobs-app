@@ -39,6 +39,11 @@ const Wrapper = styled.div`
     .info {
       color: ${({ theme }) => theme.textInfo};
     }
+
+    .hero-btn{
+      background-color: ${({ theme }) => theme.bgBtn};
+      color: ${({ theme }) => theme.textBtn};
+    }
   }
 
   nav {

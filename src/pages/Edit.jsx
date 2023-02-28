@@ -40,7 +40,8 @@ const Edit = () => {
   }, [editItem]);
 
   const handleChange = ({ target: input }) => {
-    setValues({ ...values, [input.name]: input.value });
+    const { name, value } = input;
+    setValues((prev) => ({ ...prev, [name]: value }));
   };
 
   const { id, company, position, status } = values;

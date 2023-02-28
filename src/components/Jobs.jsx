@@ -61,7 +61,7 @@ const EmptyContainer = styled.section`
 
 const Container = styled.section`
   .job {
-    background: var(--white);
+    background: ${({ theme }) => theme.bgLighter};
     border-radius: var(--borderRadius);
     margin-bottom: 2rem;
     display: grid;

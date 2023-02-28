@@ -163,6 +163,7 @@ const Wrapper = styled.section`
 
   .btn:disabled {
     cursor: not-allowed;
+    }
   }
 
   .member-btn {

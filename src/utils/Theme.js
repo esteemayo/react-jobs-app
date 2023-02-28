@@ -12,6 +12,7 @@ export const darkTheme = {
   colorBBtm: 'var(--grey-800)',
   textDate: 'var(--grey-300)',
   bgInterview: '#0f5132',
+  bgPending: '#927238',
 };
 
 export const lightTheme = {
@@ -28,4 +29,5 @@ export const lightTheme = {
   colorBBtm: 'var(--grey-200)',
   textDate: 'var(--grey-500)',
   bgInterview: '#d1e7dd',
+  bgPending: '#f7f3d7',
 };

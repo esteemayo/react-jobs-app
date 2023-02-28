@@ -155,6 +155,7 @@ const Wrapper = styled.section`
     margin-top: 1rem;
     background-color: ${({ theme }) => theme.bgBtn};
     color: ${({ theme }) => theme.textBtn};
+    outline-color: ${({ theme }) => theme.colorOutline};
   }
 
   .btn:disabled {

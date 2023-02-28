@@ -46,6 +46,7 @@ if (token) {
 
   if (expiredToken < Date.now()) {
     removeFromStorage(tokenKey);
+    initialState.user = null;
   } else {
     initialState.user = decodedToken;
   }

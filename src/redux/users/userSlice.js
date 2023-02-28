@@ -37,7 +37,6 @@ const initialState = {
   error: '',
 };
 
-const tokenKey = 'jwt';
 const token = localStorage.getItem(tokenKey);
 
 if (token) {

@@ -27,7 +27,7 @@ export const lightTheme = {
   text: 'var(--textColor)',
   textSoft: '#606060',
   soft: '#f5f5f5',
-  colorOutline: 'var(--primary-500)',
+  colorOutline: 'var(--primary-600)',
   colorBorder: 'var(--primary-200)',
   crInput: 'var(--primary-500)',
   bgColumn: 'var(--grey-200)',

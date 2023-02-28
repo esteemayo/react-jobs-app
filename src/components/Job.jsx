@@ -43,7 +43,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
 };
 
 const Container = styled.div`
-  
+  color: ${({ theme }) => theme.text};
 `;
 
 const setStatusColor = (status) => {

@@ -38,7 +38,12 @@ const Edit = () => {
     e.preventDefault();
 
     if (company && position) {
-      const updJob = { company, position, status };
+      const updJob = {
+        company,
+        position,
+        status,
+      };
+
       dispatch(updateJob({ jobId: id, job: updJob }));
     }
   };

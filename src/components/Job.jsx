@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
 import { deleteJob } from 'redux/jobs/jobSlice';

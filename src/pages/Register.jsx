@@ -122,6 +122,10 @@ const Wrapper = styled.section`
   display: grid;
   align-items: center;
 
+  .container {
+    background-color: ${({ theme }) => theme.bgLighter};
+  }
+
   .logo {
     display: block;
     margin: 0 auto;

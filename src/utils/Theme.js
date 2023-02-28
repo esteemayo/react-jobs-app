@@ -17,6 +17,7 @@ export const darkTheme = {
   textInterview: '#d1e7dd',
   textPending: '#f7f3d7',
   textDeclined: '#f8d7da',
+  bgBtn: 'var(--primary-700)',
 };
 
 export const lightTheme = {
@@ -38,4 +39,5 @@ export const lightTheme = {
   textInterview: '#0f5132',
   textPending: '#927238',
   textDeclined: '#842029',
+  bgBtn: 'var(--primary-500)',
 };

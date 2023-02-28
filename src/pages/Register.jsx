@@ -160,7 +160,6 @@ const Wrapper = styled.section`
     &:hover {
       background-color: ${({ theme }) => theme.bgBtnHover};
     }
-  }
 
   .btn:disabled {
     cursor: not-allowed;

@@ -120,6 +120,7 @@ const Wrapper = styled.section`
 
     .btn:disabled {
       cursor: not-allowed;
+      }
     }
 
     @media (min-width: 48.5em) {

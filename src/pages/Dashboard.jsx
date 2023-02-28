@@ -36,7 +36,7 @@ const Dashboard = () => {
     if (company && position) {
       const newJob = { company, position };
       dispatch(createJob({ newJob, toast }));
-      setValues(initialState);
+      handleClear();
     }
   };
 

@@ -31,6 +31,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
           <FaEdit />
         </Link>
         <button
+          type='button'
           className=' delete-btn'
           onClick={() => handleDelete(id)}
         >

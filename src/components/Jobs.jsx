@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
-import Job from './Job';
 import Spinner from './Spinner';
 import JobColumns from './JobColumns';
 import { fetchJobs } from 'redux/jobs/jobSlice';

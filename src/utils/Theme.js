@@ -19,7 +19,7 @@ export const darkTheme = {
   textDeclined: '#f8d7da',
   bgBtn: 'var(--primary-700)',
   bgBtnHover: 'var(--primary-600)',
-  textBtn: 'var(--grey-400)',
+  textBtn: 'var(--grey-100)',
 };
 
 export const lightTheme = {

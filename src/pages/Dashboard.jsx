@@ -94,6 +94,10 @@ const Wrapper = styled.section`
 
     .form-input {
       padding: 0.75rem;
+
+      &::placeholder {
+        color: #bbb;
+      }
     }
 
     .form-input:focus {

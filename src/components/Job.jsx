@@ -44,6 +44,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
 
 const Container = styled.div`
   color: ${({ theme }) => theme.text};
+  border-bottom: 1px solid ${({ theme }) => theme.colorBBtm};
 `;
 
 const setStatusColor = (status) => {

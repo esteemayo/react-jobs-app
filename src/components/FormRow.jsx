@@ -34,7 +34,7 @@ const Container = styled.div`
     caret-color: ${({ theme }) => theme.crInput};
     
     &:focus {
-      outline-color: ${({ theme }) => theme.colorBorder};
+      outline-color: ${({ theme }) => theme.colorOutline};
     }
   }
 `;

@@ -14,6 +14,7 @@ const Jobs = () => {
 
   useEffect(() => {
     dispatch(fetchJobs());
+    return () => dispatch(reset());
   }, [dispatch]);
 
   useEffect(() => {

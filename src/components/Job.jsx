@@ -53,7 +53,7 @@ const Container = styled.div`
 
 const setStatusColor = (status) => {
   if (status === 'interview') return `${({ theme }) => theme.textInterview}`;
-  if (status === 'declined') return '#842029';
+  if (status === 'declined') return `${({ theme }) => theme.textDeclined}`;
   return '#927238';
 };
 

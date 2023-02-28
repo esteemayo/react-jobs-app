@@ -30,8 +30,10 @@ export const registerUser = createAsyncThunk(
   }
 );
 
+const user = getFromStorage(tokenKey);
+
 const initialState = {
-  user: null,
+  user: user ?? null,
   isFetching: false,
   showAlert: false,
   error: '',

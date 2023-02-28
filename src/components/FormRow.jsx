@@ -28,7 +28,9 @@ const FormRow = ({
 };
 
 const Container = styled.div`
-  
+  .form-input {
+    background-color: ${({ theme }) => theme.bg};
+  }
 `;
 
 export default FormRow;

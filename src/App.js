@@ -12,7 +12,6 @@ import {
   SharedLayout,
 } from 'pages';
 import { useSelector } from 'react-redux';
-import { darkTheme, lightTheme } from 'utils/Theme';
 
 function App() {
   const { darkMode } = useSelector((state) => state.darkMode);

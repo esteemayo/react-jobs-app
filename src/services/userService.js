@@ -9,4 +9,4 @@ export const register = (userData) =>
 export const login = (userData) =>
   http.post(`${apiEndpoint}/login`, userData);
 
-export const getJwt = () => localStorage.getItem(tokenKey);
+export const getJwt = () => getFromStorage(tokenKey)?.token;

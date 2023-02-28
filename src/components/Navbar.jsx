@@ -10,6 +10,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
   const { darkMode } = useSelector((state) => state.darkMode);
+
   const [showLogout, setShowLogout] = useState(false);
 
   return (

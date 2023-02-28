@@ -6,7 +6,11 @@ const AuthRoute = ({ children }) => {
   const { user } = useSelector((state) => state.user);
 
   return user ? (
-    <Navigate to='/dashboard' replace state={{ from: location }} />
+    <Navigate
+      to='/dashboard'
+      replace
+      state={{ from: location }}
+    />
   ) : (
     children
   );

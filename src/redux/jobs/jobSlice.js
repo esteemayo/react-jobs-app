@@ -183,6 +183,6 @@ export const jobSlice = createSlice({
   },
 });
 
-export const { updateError, updateStart, updateSuccess, reset } = jobSlice.actions;
+export const { reset } = jobSlice.actions;
 
 export default jobSlice.reducer;

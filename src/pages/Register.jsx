@@ -60,7 +60,7 @@ const Register = () => {
       <div className='container'>
         {showAlert && <Alert />}
         <form className='form' onSubmit={handleSubmit}>
-          <img src={logo} alt='jobio' className='logo' />
+          <img src={logo} alt='' className='logo' />
           <h4>{isMember ? 'Login' : 'Register'}</h4>
           {!isMember && (
             <FormRow

@@ -35,6 +35,10 @@ const Wrapper = styled.div`
     display: grid;
     align-items: center;
     margin-top: -3rem;
+
+    .info {
+      color: ${({ theme }) => theme.textInfo};
+    }
   }
 
   nav {

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
 import Spinner from './Spinner';
-import JobColumns from './JobColumns';
+import Job from './Job';
 import { fetchJobs } from 'redux/jobs/jobSlice';
 
 const Jobs = () => {

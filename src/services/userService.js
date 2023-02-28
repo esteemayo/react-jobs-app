@@ -1,6 +1,6 @@
 import http from './httpService';
+import { tokenKey } from 'utils';
 
-const tokenKey = 'jwt';
 const apiEndpoint = '/users';
 
 export const register = (userData) =>

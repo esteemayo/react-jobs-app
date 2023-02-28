@@ -77,7 +77,6 @@ const Dashboard = () => {
 
 const Wrapper = styled.section`
   padding: 3rem 0;
-  background-color: ${({ theme }) => theme.bg};
 
   .job-form {
     background: var(--white);

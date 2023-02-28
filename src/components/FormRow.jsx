@@ -35,6 +35,7 @@ const Container = styled.div`
   }
 
   .form-input {
+    display: inline-block;
     background-color: ${({ theme }) => theme.bg};
     color: #999;
     border: 1px solid ${({ theme }) => theme.colorBorder};

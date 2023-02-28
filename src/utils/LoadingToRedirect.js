@@ -6,7 +6,7 @@ import Navbar from 'components/Navbar';
 
 const LoadingToRedirect = () => {
   const navigate = useNavigate();
-  const [count, setCount] = useState(5000);
+  const [count, setCount] = useState(5);
 
   useEffect(() => {
     const timeout = setTimeout(() => {

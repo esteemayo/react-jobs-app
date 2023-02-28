@@ -28,6 +28,10 @@ const FormRow = ({
 };
 
 const Container = styled.div`
+  .form-label{
+    color: ${({ theme }) => theme.text}
+  }
+  
   .form-input {
     background-color: ${({ theme }) => theme.bg};
     border: 1px solid ${({ theme }) => theme.colorBorder};

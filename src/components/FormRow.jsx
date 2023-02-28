@@ -9,7 +9,7 @@ const FormRow = ({
   placeholder,
 }) => {
   return (
-    <div className='form-row'>
+    <Container className='form-row'>
       {!horizontal && (
         <label htmlFor={name} className='form-label'>
           {name}
@@ -23,7 +23,7 @@ const FormRow = ({
         className='form-input'
         placeholder={placeholder}
       />
-    </div>
+    </Container>
   );
 };
 

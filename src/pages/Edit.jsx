@@ -28,17 +28,6 @@ const Edit = () => {
 
   const [values, setValues] = useState(initialState);
 
-  useEffect(() => {
-    dispatch(fetchJob(path));
-  }, [dispatch, path]);
-
-  useEffect(() => {
-    if (editItem) {
-      const { _id: id, company, position, status } = editItem;
-      setValues({ id, company, position, status });
-    }
-  }, [editItem]);
-
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));

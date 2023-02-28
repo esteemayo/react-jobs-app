@@ -20,6 +20,7 @@ export const darkTheme = {
   bgBtn: 'var(--primary-700)',
   bgBtnHover: 'var(--primary-600)',
   textBtn: 'var(--grey-100)',
+  textInfo: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -44,4 +45,5 @@ export const lightTheme = {
   bgBtn: 'var(--primary-500)',
   bgBtnHover: 'var(--primary-700)',
   textBtn: 'var(--white)',
+  textInfo: 'var(--grey-900)',
 };

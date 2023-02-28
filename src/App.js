@@ -65,6 +65,7 @@ function App() {
 }
 
 const Container = styled.div`
+  min-height: 100vh;
   background-color: ${({ theme }) => theme.bg};
 `;
 

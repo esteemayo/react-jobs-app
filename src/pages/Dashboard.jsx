@@ -123,7 +123,7 @@ const Wrapper = styled.section`
       cursor: not-allowed;
     }
 
-    @media (min-width: 776px) {
+    @media (min-width: 48.5em) {
       grid-template-columns: 1fr 1fr auto;
 
       .btn {

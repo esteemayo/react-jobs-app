@@ -30,6 +30,7 @@ const FormRow = ({
 
 const Container = styled.div`
   .form-label{
+    display: inline-block;
     color: ${({ theme }) => theme.text}
   }
 

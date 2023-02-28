@@ -135,7 +135,7 @@ const Wrapper = styled.section`
   .form {
     max-width: 400;
     background-color: ${({ theme }) => theme.bgLighter};
-    border-top: 5px solid var(--primary-500);
+    border-top: 5px solid ${({ theme }) => theme.bgBtn};
     box-shadow: ${({ theme }) => theme.box};
   }
 

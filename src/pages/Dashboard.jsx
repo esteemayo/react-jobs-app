@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Jobs from 'components/Jobs';
 import Alert from 'components/Alert';
 import FormRow from 'components/FormRow';
 import { createJob, reset } from 'redux/jobs/jobSlice';

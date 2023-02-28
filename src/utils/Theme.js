@@ -10,6 +10,7 @@ export const darkTheme = {
   bgColumn: 'var( --primary-200)',
   textColumn: 'var(--grey-700)',
   colorBBtm: 'var(--grey-800)',
+  textDate: 'var(--grey-700)',
 };
 
 export const lightTheme = {
@@ -24,4 +25,5 @@ export const lightTheme = {
   bgColumn: 'var(--grey-200)',
   textColumn: 'var(--grey-500)',
   colorBBtm: 'var(--grey-200)',
+  textDate: 'var(--grey-500)',
 };

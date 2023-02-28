@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import Spinner from './Spinner';
 import Job from './Job';
 import { fetchJobs } from 'redux/jobs/jobSlice';
+import JobColumns from './JobColumns';
 
 const Jobs = () => {
   const dispatch = useDispatch();

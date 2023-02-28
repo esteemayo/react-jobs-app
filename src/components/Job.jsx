@@ -70,6 +70,7 @@ const StatusContainer = styled.span`
   text-align: center;
   color: ${({ status, theme }) => status === 'interview' && theme.textInterview};
   color: ${({ status, theme }) => status === 'declined' && theme.textDeclined};
+  color: ${({ status, theme }) => status === 'pending' && theme.textPending};
   /* color: ${({ status }) => setStatusColor(status)};
   background: ${({ status }) => setStatusBackground(status)}; */
 `;

@@ -65,7 +65,11 @@ const Dashboard = () => {
           horizontal
           placeholder='Company'
         />
-        <button type='submit' className='btn' disabled={isLoading}>
+        <button
+          type='submit'
+          className='btn'
+          disabled={isLoading}
+        >
           {isLoading ? 'Adding New Job...' : 'Add Job'}
         </button>
       </form>

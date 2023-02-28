@@ -1,7 +1,7 @@
 export const darkTheme = {
   bg: '#0d1117',
   bgLighter: '#161b22',
-  text: 'rgb(156, 156, 156)',
+  text: 'var(--textColor)',
   textSoft: '#aaaaaa',
   soft: '#373737',
   colorOutline: 'var(--grey-100)',

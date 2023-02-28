@@ -16,10 +16,6 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
       dispatch(deleteJob({ jobId: id, toast }));
   };
 
-  useEffect(() => {
-    return () => dispatch(reset());
-  }, [dispatch]);
-
   return (
     <article className='job'>
       <span className='icon'>{company.charAt(0)}</span>

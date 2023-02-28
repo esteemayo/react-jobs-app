@@ -130,8 +130,6 @@ const Wrapper = styled.section`
         height: 100%;
         padding: 0 2rem;
       }
-
-      column-gap: 2rem;
     }
   }
 `;

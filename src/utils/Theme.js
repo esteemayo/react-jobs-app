@@ -19,6 +19,7 @@ export const darkTheme = {
   textDeclined: '#f8d7da',
   bgBtn: 'var(--primary-700)',
   bgBtnHover: 'var(--primary-600)',
+  textBtn: 'var(--grey-400)',
 };
 
 export const lightTheme = {
@@ -42,4 +43,5 @@ export const lightTheme = {
   textDeclined: '#842029',
   bgBtn: 'var(--primary-500)',
   bgBtnHover: 'var(--primary-700)',
+  textBtn: 'var(--white)',
 };

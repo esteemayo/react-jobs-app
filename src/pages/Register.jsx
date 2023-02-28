@@ -153,6 +153,7 @@ const Wrapper = styled.section`
 
   .btn {
     margin-top: 1rem;
+    background-color: ${({ theme }) => theme.bgBtn};
   }
 
   .btn:disabled {

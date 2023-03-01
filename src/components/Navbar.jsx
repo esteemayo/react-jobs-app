@@ -63,6 +63,7 @@ const Wrapper = styled.nav`
     gap: 2rem;
 
     .icon-container {
+      color: ${({ theme }) => theme.text};
       cursor: pointer;
     }
   }

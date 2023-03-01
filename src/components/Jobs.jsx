@@ -98,7 +98,7 @@ const Container = styled.section`
   }
 
   .date {
-    color: var(--grey-500);
+    color: ${({ theme }) => theme.textDate};
   }
 
   .status {

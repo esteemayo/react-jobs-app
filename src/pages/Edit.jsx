@@ -159,7 +159,7 @@ const Container = styled.section`
   }
 
   .status {
-    background: var(--grey-100);
+    background-color: ${({ theme }) => theme.bg};
     border-radius: var(--borderRadius);
     border-color: transparent;
     padding: 0.25rem;

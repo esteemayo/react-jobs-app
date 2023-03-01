@@ -11,7 +11,7 @@ export const darkTheme = {
   textColumn: 'var(--grey-700)',
   colorBBtm: 'var(--grey-800)',
   textDate: 'var(--grey-300)',
-  bgInterview: '#0f5132',
+  bgInterview: '#2d815a',
   bgPending: '#47391e',
   bgDeclined: '#b6454e',
   textInterview: '#d1e7dd',

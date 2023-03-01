@@ -67,6 +67,7 @@ const Register = () => {
               type='name'
               name='name'
               value={name}
+              placeholder='Name'
               handleChange={handleChange}
             />
           )}

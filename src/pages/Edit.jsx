@@ -132,7 +132,7 @@ const Edit = () => {
 
 const ErrorContainer = styled.section`
   text-align: center;
-  padding-top: 6rem; ;
+  padding-top: 6rem;
 `;
 
 const Container = styled.section`

@@ -42,10 +42,6 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   );
 };
 
-const Container = styled.div`
-  
-`;
-
 const setStatusColor = (status) => {
   if (status === 'interview') return '#0f5132';
   if (status === 'declined') return '#842029';

@@ -155,6 +155,7 @@ const Container = styled.section`
     color: ${({ theme }) => theme.textSuccess};
     letter-spacing: var(--letterSpacing);
     margin-top: 0;
+    }
   }
 
   .status {

@@ -165,6 +165,10 @@ const Container = styled.section`
     border-color: transparent;
     padding: 0.25rem;
     outline-color: ${({ theme }) => theme.colorOutline};
+    
+    & > * {
+      background-color: ${({ theme }) => theme.bgLighter};
+    }
   }
 
   .back-home {

@@ -111,7 +111,7 @@ const Container = styled.section`
   }
 
   .edit-btn {
-    color: var(--green-dark);
+    color: ${({ theme }) => theme.bgEditBtn};
     border-color: transparent;
     background: transparent !important;
     outline: transparent;

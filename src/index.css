@@ -189,7 +189,7 @@ ul {
 
 .alert-danger {
   color: var(--red-dark);
-  background: var(--red-light);
+  background-color: var(--red-light);
 }
 
 .alert-success {

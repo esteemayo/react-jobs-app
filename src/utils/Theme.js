@@ -22,6 +22,7 @@ export const darkTheme = {
   textBtn: 'var(--grey-100)',
   textInfo: 'rgb(156, 156, 156)',
   box: '2px 4px 10px 1px rgba(102, 102, 102, 0.47)',
+  textSuccess: 'var(--green-light)',
 };
 
 export const lightTheme = {
@@ -48,4 +49,5 @@ export const lightTheme = {
   textBtn: 'var(--white)',
   textInfo: 'var(--grey-900)',
   box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
+  textSuccess: 'var(--green-dark)',
 };

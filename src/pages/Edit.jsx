@@ -191,7 +191,7 @@ const Container = styled.section`
     width: 100%;
     font-size: 1rem;
     line-height: 1.15;
-    background: var(--black);
+    background: ${({ theme }) => theme.bgBack};
   }
 
   .back-home:hover {

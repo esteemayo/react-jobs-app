@@ -66,7 +66,7 @@ const StatusContainer = styled.span`
   background-color: ${({ status, theme }) => status === 'declined' && theme.bgDeclined};
   background-color: ${({ status, theme }) => status === 'pending' && theme.bgPending};
   /* color: ${({ status }) => setStatusColor(status)};
-  background: ${({ status }) => setStatusBackground(status)}; */
+  background-color: ${({ status }) => setStatusBackground(status)}; */
 `;
 
 export default Job;

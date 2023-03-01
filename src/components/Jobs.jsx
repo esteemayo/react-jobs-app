@@ -172,6 +172,7 @@ const Container = styled.section`
 
     .job:last-child {
       border-bottom: none;
+      }
     }
 
     span {

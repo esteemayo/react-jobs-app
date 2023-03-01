@@ -161,6 +161,7 @@ const Container = styled.section`
       border-radius: 0;
       justify-content: left;
       text-align: left;
+      color: ${({ theme }) => theme.text};
       border-bottom: 1px solid var(--grey-200);
       grid-template-columns: 1fr 1fr 150px 100px 100px;
       align-items: center;

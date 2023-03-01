@@ -171,6 +171,10 @@ const Container = styled.section`
     }
   }
 
+  .btn {
+    
+  }
+
   .back-home {
     text-align: center;
     display: block;

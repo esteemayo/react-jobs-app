@@ -68,6 +68,7 @@ const Wrapper = styled.div`
     height: 6rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .icon-container {
       color: ${({ theme }) => theme.text};

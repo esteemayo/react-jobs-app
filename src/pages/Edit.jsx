@@ -164,6 +164,7 @@ const Container = styled.section`
     border-radius: var(--borderRadius);
     border-color: transparent;
     padding: 0.25rem;
+    outline-color: ${({ theme }) => theme.colorOutline};
   }
 
   .back-home {

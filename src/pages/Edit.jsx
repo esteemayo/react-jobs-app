@@ -148,6 +148,7 @@ const Container = styled.section`
 
   .form h4 {
     text-align: center;
+    color: ${({ theme }) => theme.text};
   }
 
   .form > p {

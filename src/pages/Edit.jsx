@@ -187,8 +187,10 @@ const Container = styled.section`
       width: 200px;
     }
 
-    .form h4 {
-      text-align: left;
+    .form {
+      h4 {
+        text-align: left;
+      }
     }
 
     .form-container {

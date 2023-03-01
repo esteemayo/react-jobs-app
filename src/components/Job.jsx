@@ -16,7 +16,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
   };
 
   return (
-    <Container className='job'>
+    <div className='job'>
       <span className='icon'>{company.charAt(0)}</span>
       <span className='position'>{position.toLowerCase()}</span>
       <span className='company'>{company}</span>
@@ -38,7 +38,7 @@ const Job = ({ _id: id, slug, company, position, status, createdAt }) => {
           <FaTrash />
         </button>
       </div>
-    </Container>
+    </div>
   );
 };
 

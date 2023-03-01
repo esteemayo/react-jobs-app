@@ -45,7 +45,7 @@ export const lightTheme = {
   bgDeclined: '#f8d7da',
   textInterview: 'var(--green-dark)',
   textPending: '#927238',
-  textDeclined: '#842029',
+  textDeclined: 'var(--red-dark)',
   bgBtn: 'var(--primary-500)',
   bgBtnHover: 'var(--primary-700)',
   textBtn: 'var(--white)',

@@ -169,7 +169,6 @@ const Container = styled.section`
       padding: 1rem 1.5rem;
       column-gap: 1rem;
       margin-bottom: 0;
-    }
 
     .job:last-child {
       border-bottom: none;

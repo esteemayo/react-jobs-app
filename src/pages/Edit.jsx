@@ -200,10 +200,6 @@ const Container = styled.section`
       align-items: center;
     }
 
-    .form > p {
-      text-align: left;
-    }
-
     .form-row {
       margin-bottom: 0;
     }

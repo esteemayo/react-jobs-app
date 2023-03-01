@@ -173,6 +173,7 @@ const Container = styled.section`
 
   .btn {
     background-color: ${({ theme }) => theme.bgBtn};
+    color: ${({ theme }) => theme.textBtn};
   }
 
   .back-home {

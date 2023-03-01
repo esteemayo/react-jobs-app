@@ -152,7 +152,7 @@ const Container = styled.section`
 
   .form > p {
     text-align: center;
-    color: var(--green-dark);
+    color: ${({ theme }) => theme.textSuccess};
     letter-spacing: var(--letterSpacing);
     margin-top: 0;
   }

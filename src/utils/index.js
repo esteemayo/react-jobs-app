@@ -1,5 +1,7 @@
 export const tokenKey = 'jwt';
 
+export const darkModeKey = 'darkMode';
+
 export const getFromStorage = (key) => {
   return JSON.parse(localStorage.getItem(key));
 }

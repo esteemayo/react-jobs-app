@@ -27,6 +27,7 @@ export const darkTheme = {
   bgBackHover: '#1b1f22',
   bgEditIcon: '#4ec58d',
   bgDeleteIcon: '#fa4655',
+  textDrop: 'var(--grey-100)',
 };
 
 export const lightTheme = {
@@ -58,4 +59,5 @@ export const lightTheme = {
   bgBackHover: 'var(--grey-500)',
   bgEditIcon: 'var(--green-dark)',
   bgDeleteIcon: 'var(--red-dark)',
+  textDrop: 'var(--primary-500)',
 };

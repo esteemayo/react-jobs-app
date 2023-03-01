@@ -43,6 +43,7 @@ const Container = styled.div`
     caret-color: ${({ theme }) => theme.crInput};
 
     &::placeholder {
+      font-size: 0.75rem;
       color: #bbb;
     }
     

@@ -92,6 +92,7 @@ const Register = () => {
             <FormRow
               type='password'
               name='confirmPassword'
+              placeholder='********'
               value={confirmPassword}
               handleChange={handleChange}
             />

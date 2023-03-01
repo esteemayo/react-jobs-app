@@ -140,7 +140,7 @@ const Container = styled.section`
     gap: 0 0.5rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;

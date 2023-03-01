@@ -68,6 +68,10 @@ const Wrapper = styled.div`
     height: 6rem;
     display: flex;
     align-items: center;
+
+    .icon-container {
+      
+    }
   }
 
   h1 {

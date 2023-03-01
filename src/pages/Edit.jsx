@@ -145,9 +145,9 @@ const Container = styled.section`
     background-color: ${({ theme }) => theme.bgLighter};
     margin-top: 2rem;
 
-  .form h4 {
-    text-align: center;
-    color: ${({ theme }) => theme.text};
+    h4 {
+      text-align: center;
+      color: ${({ theme }) => theme.text};
     }
   }
 

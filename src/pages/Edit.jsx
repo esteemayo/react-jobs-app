@@ -180,7 +180,7 @@ const Container = styled.section`
     background: var(--grey-500);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     .back-home {
       width: 200px;
     }

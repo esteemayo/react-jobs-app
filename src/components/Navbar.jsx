@@ -58,7 +58,8 @@ const Wrapper = styled.nav`
   }
 
   .right {
-    
+    display: flex;
+    align-items: center;
   }
 
   .btn-container {

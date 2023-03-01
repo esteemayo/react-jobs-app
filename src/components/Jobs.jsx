@@ -185,7 +185,7 @@ const Container = styled.section`
 
     .date {
       font-weight: 400;
-      color: var(--grey-500);
+      color: ${({ theme }) => theme.textDate};
     }
 
     .status {

@@ -150,11 +150,11 @@ const Container = styled.section`
       color: ${({ theme }) => theme.text};
     }
 
-  .form > p {
-    text-align: center;
-    color: ${({ theme }) => theme.textSuccess};
-    letter-spacing: var(--letterSpacing);
-    margin-top: 0;
+    & > p {
+      text-align: center;
+      color: ${({ theme }) => theme.textSuccess};
+      letter-spacing: var(--letterSpacing);
+      margin-top: 0;
     }
   }
 

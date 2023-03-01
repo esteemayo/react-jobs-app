@@ -23,7 +23,7 @@ const Navbar = () => {
             className='icon-container'
             onClick={() => dispatch(toggle())}
           >
-            {darkMode ? 'Light' : 'Dark'} mode
+            {darkMode ? 'Light' : 'Dark'} Mode
           </div>
           {user && (
             <div className='btn-container'>

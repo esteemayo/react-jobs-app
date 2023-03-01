@@ -61,6 +61,7 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
     gap: 2rem;
+    cursor: pointer;
   }
 
   .btn-container {

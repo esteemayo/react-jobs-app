@@ -157,7 +157,7 @@ ul {
 
 .btn-hipster {
   color: var(--primary-500);
-  background: var(--primary-200);
+  background-color: var(--primary-200);
 }
 
 .btn-hipster:hover {

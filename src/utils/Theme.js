@@ -25,6 +25,7 @@ export const darkTheme = {
   textSuccess: 'var(--green-light)',
   bgBack: '#08090a',
   bgBackHover: '#1b1f22',
+  bgEditBtn: '#196e47',
 };
 
 export const lightTheme = {
@@ -54,4 +55,5 @@ export const lightTheme = {
   textSuccess: 'var(--green-dark)',
   bgBack: 'var(--black)',
   bgBackHover: 'var(--grey-500)',
+  bgEditBtn: 'var(--green-dark)',
 };

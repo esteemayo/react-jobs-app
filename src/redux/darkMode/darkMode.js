@@ -10,6 +10,7 @@ export const darkModeSlice = createSlice({
   initialState,
   reducers: {
     toggle: (state) => {
+      setToStorage('darkMode', !state.darkMode);
       state.darkMode = !state.darkMode;
     },
   },

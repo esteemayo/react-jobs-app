@@ -92,7 +92,7 @@ const Wrapper = styled.nav`
   }
 
   .dropdown-btn {
-    background: transparent;
+    background-color: transparent;
     border-color: transparent;
     color: var(--primary-500);
     letter-spacing: var(--letterSpacing);

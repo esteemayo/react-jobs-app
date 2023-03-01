@@ -51,6 +51,7 @@ const Jobs = () => {
 
 const EmptyContainer = styled.section`
   text-align: center;
+
   h5 {
     text-transform: none;
   }

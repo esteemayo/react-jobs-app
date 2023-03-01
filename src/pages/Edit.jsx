@@ -163,7 +163,6 @@ const Container = styled.section`
     border-radius: var(--borderRadius);
     border-color: transparent;
     padding: 0.25rem;
-  }
 
   .status:focus {
     outline: none;

@@ -57,6 +57,10 @@ const Wrapper = styled.nav`
     align-items: center;
   }
 
+  .right {
+    
+  }
+
   .btn-container {
     position: relative;
   }

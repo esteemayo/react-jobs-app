@@ -164,8 +164,8 @@ const Container = styled.section`
     border-color: transparent;
     padding: 0.25rem;
 
-  .status:focus {
-    outline: none;
+    &:focus {
+      outline: none;
     }
   }
 

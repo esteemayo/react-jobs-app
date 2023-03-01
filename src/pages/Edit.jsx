@@ -191,6 +191,10 @@ const Container = styled.section`
       h4 {
         text-align: left;
       }
+
+      & > p {
+        text-align: left;
+      }
     }
 
     .form-container {

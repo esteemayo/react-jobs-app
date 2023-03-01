@@ -170,8 +170,8 @@ const Container = styled.section`
       column-gap: 1rem;
       margin-bottom: 0;
 
-    .job:last-child {
-      border-bottom: none;
+      &:last-child {
+        border-bottom: none;
       }
     }
 

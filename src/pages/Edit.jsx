@@ -149,7 +149,6 @@ const Container = styled.section`
       text-align: center;
       color: ${({ theme }) => theme.text};
     }
-  }
 
   .form > p {
     text-align: center;

@@ -94,7 +94,7 @@ const Wrapper = styled.nav`
   .dropdown-btn {
     background-color: transparent;
     border-color: transparent;
-    color: var(--primary-500);
+    color: ${({ theme }) => theme.textDrop};
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
     cursor: pointer;

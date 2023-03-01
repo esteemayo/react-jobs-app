@@ -146,7 +146,7 @@ const Container = styled.section`
     column-gap: 1rem;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     grid-template-columns: 1fr;
 
     .icon {

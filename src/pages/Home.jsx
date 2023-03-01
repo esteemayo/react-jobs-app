@@ -6,6 +6,8 @@ import main from 'assets/main.svg';
 import { useSelector } from 'react-redux';
 
 const Home = () => {
+  const { darkMode } = useSelector((state) => state.darkMode);
+
   return (
     <Wrapper>
       <nav>

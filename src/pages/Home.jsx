@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import logo from 'assets/logo.svg';
 import main from 'assets/main.svg';
+import { toggle } from 'redux/darkMode/darkMode';
 
 const Home = () => {
   const dispatch = useDispatch();

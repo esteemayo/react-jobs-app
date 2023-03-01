@@ -142,6 +142,7 @@ const Container = styled.section`
 
   .form {
     max-width: var(--max-width);
+    background-color: ${({ theme }) => theme.bgLighter};
     margin-top: 2rem;
   }
 

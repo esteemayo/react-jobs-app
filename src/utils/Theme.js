@@ -42,7 +42,7 @@ export const lightTheme = {
   textDate: 'var(--grey-500)',
   bgInterview: '#d1e7dd',
   bgPending: '#f7f3d7',
-  bgDeclined: '#f8d7da',
+  bgDeclined: 'var(--red-light)',
   textInterview: 'var(--green-dark)',
   textPending: '#927238',
   textDeclined: 'var(--red-dark)',

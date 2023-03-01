@@ -65,6 +65,7 @@ const Wrapper = styled.nav`
     justify-content: center;
     gap: 0 0.5rem;
     position: relative;
+    background-color: ${({ theme }) => theme.bgBtn};
   }
 
   .dropdown {

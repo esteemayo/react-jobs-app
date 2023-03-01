@@ -4,7 +4,7 @@ import { getFromStorage, setToStorage } from 'utils';
 const darkMode = getFromStorage('darkMode');
 
 const initialState = {
-  darkMode: true,
+  darkMode: darkMode ?? true,
 };
 
 export const darkModeSlice = createSlice({

@@ -151,7 +151,7 @@ ul {
 }
 
 .btn:hover {
-  background: var(--primary-700);
+  background-color: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
 

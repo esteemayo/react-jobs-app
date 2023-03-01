@@ -67,6 +67,7 @@ const Wrapper = styled.nav`
     position: relative;
     background-color: ${({ theme }) => theme.bgBtn};
     color: ${({ theme }) => theme.textBtn};
+    outline-color: ${({ theme }) => theme.colorOutline};
   }
 
   .dropdown {

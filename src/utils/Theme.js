@@ -40,7 +40,7 @@ export const lightTheme = {
   textColumn: 'var(--grey-500)',
   colorBBtm: 'var(--grey-200)',
   textDate: 'var(--grey-500)',
-  bgInterview: '#d1e7dd',
+  bgInterview: 'var(--green-light)',
   bgPending: '#f7f3d7',
   bgDeclined: 'var(--red-light)',
   textInterview: 'var(--green-dark)',

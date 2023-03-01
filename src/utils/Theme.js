@@ -16,7 +16,7 @@ export const darkTheme = {
   bgDeclined: '#b6454e',
   textInterview: 'var(--green-light)',
   textPending: '#f7f3d7',
-  textDeclined: '#f8d7da',
+  textDeclined: 'var(--red-light)',
   bgBtn: 'var(--primary-700)',
   bgBtnHover: 'var(--primary-600)',
   textBtn: 'var(--grey-100)',

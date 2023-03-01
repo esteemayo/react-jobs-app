@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import logo from 'assets/logo.svg';
 import main from 'assets/main.svg';
+import { useSelector } from 'react-redux';
 
 const Home = () => {
   return (

@@ -13,7 +13,7 @@ export const darkTheme = {
   textDate: 'var(--grey-300)',
   bgInterview: '#0f5132',
   bgPending: '#47391e',
-  bgDeclined: '#842029',
+  bgDeclined: '#b6454e',
   textInterview: '#d1e7dd',
   textPending: '#f7f3d7',
   textDeclined: '#f8d7da',

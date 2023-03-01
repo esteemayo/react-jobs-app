@@ -14,7 +14,7 @@ export const darkTheme = {
   bgInterview: '#2d815a',
   bgPending: '#47391e',
   bgDeclined: '#b6454e',
-  textInterview: '#d1e7dd',
+  textInterview: 'var(--green-light)',
   textPending: '#f7f3d7',
   textDeclined: '#f8d7da',
   bgBtn: 'var(--primary-700)',

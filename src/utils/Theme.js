@@ -23,7 +23,7 @@ export const darkTheme = {
   textInfo: 'rgb(156, 156, 156)',
   box: '2px 4px 10px 1px rgba(102, 102, 102, 0.47)',
   textSuccess: 'var(--green-light)',
-  bgBack: '#555555',
+  bgBack: '#08090a',
 };
 
 export const lightTheme = {

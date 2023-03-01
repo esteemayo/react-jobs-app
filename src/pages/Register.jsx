@@ -76,7 +76,7 @@ const Register = () => {
             type='email'
             name='email'
             value={email}
-            placeholder='Email address'
+            placeholder='Email'
             handleChange={handleChange}
           />
 

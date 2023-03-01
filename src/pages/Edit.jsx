@@ -179,6 +179,10 @@ const Container = styled.section`
     &:hover {
       background-color: ${({ theme }) => theme.bgBtnHover};
     }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 
   .back-home {

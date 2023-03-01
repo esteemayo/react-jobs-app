@@ -172,7 +172,7 @@ const Container = styled.section`
   }
 
   .btn {
-    
+    background-color: ${({ theme }) => theme.bgBtn};
   }
 
   .back-home {

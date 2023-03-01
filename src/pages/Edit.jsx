@@ -166,6 +166,7 @@ const Container = styled.section`
 
   .status:focus {
     outline: none;
+    }
   }
 
   .back-home {

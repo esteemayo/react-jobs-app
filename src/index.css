@@ -194,7 +194,7 @@ ul {
 
 .alert-success {
   color: var(--green-dark);
-  background: var(--green-light);
+  background-color: var(--green-light);
 }
 
 /* form */

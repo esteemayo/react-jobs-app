@@ -18,24 +18,26 @@ const Navbar = () => {
     <Wrapper>
       <div className='nav-center'>
         <img src={logo} alt='jobs app' />
-        <div onClick={() => dispatch(toggle())}>{darkMode ? 'Light' : 'Dark'} mode</div>
-        {user && (
-          <div className='btn-container'>
-            <button className='btn' onClick={() => setShowLogout(!showLogout)}>
-              <FaUserCircle />
-              {user?.name}
-              <FaCaretDown />
-            </button>
-            <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
-              <button
-                className='dropdown-btn'
-                onClick={() => dispatch(setLogout())}
-              >
-                logout
+        <div className='right'>
+          <div onClick={() => dispatch(toggle())}>{darkMode ? 'Light' : 'Dark'} mode</div>
+          {user && (
+            <div className='btn-container'>
+              <button className='btn' onClick={() => setShowLogout(!showLogout)}>
+                <FaUserCircle />
+                {user?.name}
+                <FaCaretDown />
               </button>
+              <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
+                <button
+                  className='dropdown-btn'
+                  onClick={() => dispatch(setLogout())}
+                >
+                  logout
+                </button>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </Wrapper>
   );

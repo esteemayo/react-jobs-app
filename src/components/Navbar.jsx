@@ -19,7 +19,12 @@ const Navbar = () => {
       <div className='nav-center'>
         <img src={logo} alt='jobs app' />
         <div className='right'>
-          <div className='icon-container' onClick={() => dispatch(toggle())}>{darkMode ? 'Light' : 'Dark'} mode</div>
+          <div
+            className='icon-container'
+            onClick={() => dispatch(toggle())}
+          >
+            {darkMode ? 'Light' : 'Dark'} mode
+          </div>
           {user && (
             <div className='btn-container'>
               <button className='btn' onClick={() => setShowLogout(!showLogout)}>

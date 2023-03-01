@@ -70,7 +70,8 @@ const Wrapper = styled.div`
     align-items: center;
 
     .icon-container {
-      
+      color: ${({ theme }) => theme.text};
+      cursor: pointer;
     }
   }
 

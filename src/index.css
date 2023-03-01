@@ -202,7 +202,7 @@ ul {
 .form {
   width: var(--fluid-width);
   max-width: var(--fixed-width);
-  background: var(--white);
+  background-color: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;

@@ -122,7 +122,7 @@ const Container = styled.section`
   }
 
   .delete-btn {
-    color: var(--red-dark);
+    color: ${({ theme }) => theme.bgDeleteIcon};
     border-color: transparent;
     border-radius: var(--borderRadius);
     cursor: pointer;

@@ -84,6 +84,7 @@ const Register = () => {
             type='password'
             name='password'
             value={password}
+            placeholder='********'
             handleChange={handleChange}
           />
 

@@ -43,7 +43,7 @@ export const lightTheme = {
   bgInterview: '#d1e7dd',
   bgPending: '#f7f3d7',
   bgDeclined: '#f8d7da',
-  textInterview: '#0f5132',
+  textInterview: 'var(--green-dark)',
   textPending: '#927238',
   textDeclined: '#842029',
   bgBtn: 'var(--primary-500)',

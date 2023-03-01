@@ -195,7 +195,7 @@ const Container = styled.section`
   }
 
   .back-home:hover {
-    background: var(--grey-500);
+    background: ${({ theme }) => theme.bgBackHover};
   }
 
   @media (min-width: 48em) {

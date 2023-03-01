@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import logo from 'assets/logo.svg';

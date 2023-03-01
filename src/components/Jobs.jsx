@@ -55,6 +55,7 @@ const EmptyContainer = styled.section`
   h5 {
     text-transform: none;
   }
+
   span {
     color: var(--primary-500);
   }

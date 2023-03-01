@@ -79,7 +79,7 @@ const Wrapper = styled.nav`
     top: 40px;
     left: 0;
     width: 100%;
-    background: var(--white);
+    background-color: ${({ theme }) => theme.bgLighter};
     padding: 0.5rem;
     text-align: center;
     visibility: hidden;

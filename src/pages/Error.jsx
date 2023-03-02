@@ -37,7 +37,7 @@ const Wrapper = styled.main`
   p {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: var(--grey-500);
+    color: ${({ theme }) => theme.textError};
   }
 
   a {

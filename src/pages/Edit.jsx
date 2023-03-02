@@ -203,7 +203,7 @@ const Container = styled.section`
     width: 100%;
     font-size: 1rem;
     line-height: 1.15;
-    background: ${({ theme }) => theme.bgBack};
+    background-color: ${({ theme }) => theme.bgBack};
   }
 
   .back-home:hover {

@@ -28,6 +28,7 @@ export const darkTheme = {
   bgEditIcon: '#4ec58d',
   bgDeleteIcon: '#fa4655',
   textDrop: 'var(--grey-100)',
+  textError: 'var(--grey-300)',
 };
 
 export const lightTheme = {
@@ -60,4 +61,5 @@ export const lightTheme = {
   bgEditIcon: 'var(--green-dark)',
   bgDeleteIcon: 'var(--red-dark)',
   textDrop: 'var(--primary-500)',
+  textError: 'var(--grey-500)',
 };

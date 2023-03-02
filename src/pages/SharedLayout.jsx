@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 import Navbar from 'components/Navbar';
 import 'react-toastify/dist/ReactToastify.css';
+import DarkMode from 'components/DarkMode';
 
 const SharedLayout = () => {
   const { user } = useSelector((state) => state.user);

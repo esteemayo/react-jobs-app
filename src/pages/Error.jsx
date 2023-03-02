@@ -41,7 +41,7 @@ const Wrapper = styled.main`
   }
 
   a {
-    color: var(--primary-500);
+    color: ${({ theme }) => theme.errorLink};
     text-decoration: underline;
   }
 `;

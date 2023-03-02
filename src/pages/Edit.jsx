@@ -44,7 +44,7 @@ const Edit = () => {
         status,
       };
 
-      dispatch(updateJob({ jobId: id, job: updJob }));
+    dispatch(updateJob({ jobId: id, job: updJob }));
     }
   };
 

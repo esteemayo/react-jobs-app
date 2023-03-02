@@ -45,7 +45,6 @@ const Edit = () => {
       };
 
     dispatch(updateJob({ jobId: id, job: updJob }));
-    }
   };
 
   useEffect(() => {

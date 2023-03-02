@@ -128,7 +128,6 @@ export const jobSlice = createSlice({
     },
     [createJob.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
-      state.showAlert = true;
       state.jobs.unshift(payload);
     },
     [createJob.rejected]: (state, { payload }) => {

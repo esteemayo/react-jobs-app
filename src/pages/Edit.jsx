@@ -65,7 +65,7 @@ const Edit = () => {
     return <Spinner />;
   }
 
-  if (!editItem || error) {
+  if (!editItem || singleJobError) {
     return (
       <ErrorContainer className='page'>
         <h5>There was an error, please double check your job SLUG</h5>

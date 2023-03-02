@@ -40,7 +40,7 @@ const Register = () => {
       if (email && password) {
         const userData = { email, password };
 
-        dispatch(loginUser({ user: userData, toast }));
+      dispatch(loginUser({ user: userData, toast }));
       }
     } else {
       if (name && email && password && confirmPassword) {

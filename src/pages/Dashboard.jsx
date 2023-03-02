@@ -34,9 +34,9 @@ const Dashboard = () => {
     e.preventDefault();
 
     if (company && position) {
-      const newJob = { company, position };
-      dispatch(createJob({ newJob, toast }));
-      handleClear();
+    const newJob = { company, position };
+    dispatch(createJob({ newJob, toast }));
+    handleClear();
     }
   };
 

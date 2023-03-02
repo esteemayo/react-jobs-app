@@ -37,7 +37,6 @@ const Dashboard = () => {
     const newJob = { company, position };
     dispatch(createJob({ newJob, toast }));
     handleClear();
-    }
   };
 
   useEffect(() => {

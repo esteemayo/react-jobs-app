@@ -22,7 +22,7 @@ const Edit = () => {
     editItem,
     isLoading,
     editComplete,
-    singleJobError: error,
+    singleJobError,
   } = useSelector((state) => state.jobs);
 
   const [values, setValues] = useState(initialState);

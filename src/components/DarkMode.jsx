@@ -14,7 +14,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 `;
 
 export default DarkMode;

@@ -12,7 +12,7 @@ const Container = styled.div`
   background-color: #837dff;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 `;
 
 export default DarkMode;

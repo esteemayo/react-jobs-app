@@ -37,7 +37,6 @@ const Edit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (company && position) {
     const updJob = {
       company,
       position,

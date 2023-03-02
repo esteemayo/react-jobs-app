@@ -117,7 +117,7 @@ export const jobSlice = createSlice({
     },
     [fetchJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
-      state.editItem = '';
+      state.editItem = null;
       state.singleJobError = true;
       state.error = payload.message;
     },

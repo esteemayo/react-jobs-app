@@ -136,6 +136,10 @@ const ErrorContainer = styled.section`
     background-color: ${({ theme }) => theme.bgBtn};
     color: ${({ theme }) => theme.textBtn};
     outline-color: ${({ theme }) => theme.colorOutline};
+
+    &:hover {
+      background-color: ${({ theme }) => theme.bgBtnHover};
+    }
   }
 `;
 

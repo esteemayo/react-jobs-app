@@ -33,7 +33,11 @@ const Dashboard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newJob = { company, position };
+    const newJob = {
+      company,
+      position,
+    };
+
     dispatch(createJob({ newJob, toast }));
     handleClear();
   };

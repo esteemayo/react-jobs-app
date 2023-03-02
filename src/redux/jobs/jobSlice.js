@@ -159,6 +159,7 @@ export const jobSlice = createSlice({
       state.isLoading = false;
       state.editComplete = false;
       state.showAlert = true;
+      state.singleJobError = true;
       state.error = payload.message;
     },
     [deleteJob.pending]: (state) => {

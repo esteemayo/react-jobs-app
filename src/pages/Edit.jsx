@@ -133,7 +133,7 @@ const ErrorContainer = styled.section`
   padding-top: 6rem;
 
   h5 {
-    
+    color: ${({ theme }) => theme.text};
   }
 
   .btn {

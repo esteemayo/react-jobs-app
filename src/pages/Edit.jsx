@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useLocation, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
 
 import FormRow from 'components/FormRow';
 import { fetchJob, reset, updateJob } from 'redux/jobs/jobSlice';

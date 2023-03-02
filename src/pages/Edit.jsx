@@ -71,7 +71,7 @@ const Edit = () => {
         <h5>There was an error, please double check your job SLUG</h5>
 
         <Link to='/dashboard' className='btn'>
-          dasboard
+          dashboard
         </Link>
       </ErrorContainer>
     );

@@ -60,6 +60,7 @@ const Edit = () => {
   }, [editItem]);
 
   useEffect(() => {
+    error && toast.error(error);
     return () => dispatch(reset());
   }, [dispatch]);
 

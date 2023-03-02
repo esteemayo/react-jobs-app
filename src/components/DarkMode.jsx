@@ -13,6 +13,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
 `;
 
 export default DarkMode;

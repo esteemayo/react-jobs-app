@@ -30,6 +30,7 @@ const Wrapper = styled.main`
   justify-content: center;
 
   h3 {
+    color: ${({ theme }) => theme.text};
     margin-bottom: 0.5rem;
   }
 

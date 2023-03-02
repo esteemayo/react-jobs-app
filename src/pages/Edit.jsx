@@ -132,6 +132,10 @@ const ErrorContainer = styled.section`
   text-align: center;
   padding-top: 6rem;
 
+  h5 {
+    
+  }
+
   .btn {
     background-color: ${({ theme }) => theme.bgBtn};
     color: ${({ theme }) => theme.textBtn};

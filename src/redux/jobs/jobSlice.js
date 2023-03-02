@@ -154,7 +154,6 @@ export const jobSlice = createSlice({
       }
 
       state.editItem = payload;
-      state.editComplete = true;
     },
     [updateJob.rejected]: (state, { payload }) => {
       state.isLoading = false;

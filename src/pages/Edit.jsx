@@ -62,7 +62,7 @@ const Edit = () => {
   useEffect(() => {
     error && toast.error(error);
     return () => dispatch(reset());
-  }, [dispatch]);
+  }, [error, dispatch]);
 
   if (isLoading && !editItem) {
     return <Spinner />;

@@ -37,7 +37,6 @@ const Register = () => {
     e.preventDefault();
 
     if (isMember) {
-      if (email && password) {
       const userData = { email, password };
 
       dispatch(loginUser({ user: userData, toast }));

@@ -166,6 +166,7 @@ const Wrapper = styled.section`
     }
     
     &:disabled {
+      opacity: 0.7;
       cursor: not-allowed;
     }
   }

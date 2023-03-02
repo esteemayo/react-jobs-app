@@ -98,7 +98,6 @@ export const jobSlice = createSlice({
     [fetchJobs.pending]: (state) => {
       state.isLoading = true;
       state.showAlert = false;
-      state.editComplete = false;
     },
     [fetchJobs.fulfilled]: (state, { payload }) => {
       state.isLoading = false;

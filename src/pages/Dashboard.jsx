@@ -34,8 +34,7 @@ const Dashboard = () => {
     e.preventDefault();
 
     const newJob = {
-      company,
-      position,
+      ...values,
     };
 
     dispatch(createJob({ newJob, toast }));

@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import FormRow from 'components/FormRow';
 import { fetchJob, reset, updateJob } from 'redux/jobs/jobSlice';
 import Spinner from 'components/Spinner';
-import { toast } from 'react-toastify';
 
 const initialState = {
   id: null,

@@ -134,6 +134,7 @@ const ErrorContainer = styled.section`
 
   .btn {
     background-color: ${({ theme }) => theme.bgBtn};
+    color: ${({ theme }) => theme.textBtn};
   }
 `;
 

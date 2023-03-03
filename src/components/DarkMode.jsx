@@ -21,6 +21,9 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   background-color: #e4e4e8;

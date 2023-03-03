@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
+import { BiSun } from 'react-icons/bi';
 import { FaRegMoon } from 'react-icons/fa';
 
 import { toggle } from 'redux/darkMode/darkMode';

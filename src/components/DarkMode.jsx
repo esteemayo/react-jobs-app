@@ -23,6 +23,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 2rem;
   height: 2rem;
+  background-color: #e4e4e8;
 `;
 
 export default DarkMode;

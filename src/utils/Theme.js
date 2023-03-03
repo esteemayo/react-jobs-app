@@ -57,7 +57,7 @@ export const lightTheme = {
   textPending: '#927238',
   textDeclined: 'var(--red-dark)',
   bgBtn: 'var(--primary-500)',
-  boxBtn: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+  boxBtn: 'var(--shadow-1)',
   bgBtnHover: 'var(--primary-700)',
   textBtn: 'var(--white)',
   textInfo: 'var(--grey-900)',

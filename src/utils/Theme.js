@@ -32,6 +32,7 @@ export const darkTheme = {
   errorLink: 'var(--primary-700)',
   bgMode: '#131417',
   bgIconMode: '#e4e4e8',
+  textMode: '#39393c',
 };
 
 export const lightTheme = {
@@ -68,4 +69,5 @@ export const lightTheme = {
   errorLink: 'var(--primary-500)',
   bgMode: 'rgb(236, 236, 236)',
   bgIconMode: '#39393c',
+  textMode: '#e4e4e8',
 };

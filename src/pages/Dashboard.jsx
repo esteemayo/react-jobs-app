@@ -84,7 +84,7 @@ const Wrapper = styled.section`
   padding: 3rem 0;
 
   .job-form {
-    background: ${({ theme }) => theme.bgLighter};
+    background-color: ${({ theme }) => theme.bgLighter};
     display: grid;
     row-gap: 1rem;
     column-gap: 0.5rem;

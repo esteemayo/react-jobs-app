@@ -8,7 +8,7 @@ const DarkMode = () => {
 
   return (
     <Container>
-      <Wrapper>
+      <Wrapper onClick={() => dispatch(toggle())}>
         {darkMode ? 'Light' : 'Dark'}
       </Wrapper>
     </Container>

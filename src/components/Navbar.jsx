@@ -90,6 +90,7 @@ const Wrapper = styled.nav`
       background-color: ${({ theme }) => theme.bgBtnHover};
     }
   }
+  }
 
   .dropdown {
     position: absolute;

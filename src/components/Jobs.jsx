@@ -74,7 +74,7 @@ const Container = styled.section`
   }
 
   .icon {
-    background: var(--primary-500);
+    background-color: var(--primary-500);
     display: block;
     border-radius: var(--borderRadius);
     color: var(--white);

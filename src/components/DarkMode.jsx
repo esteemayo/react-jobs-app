@@ -6,7 +6,9 @@ const DarkMode = () => {
 
   return (
     <Container>
-      <Wrapper>{darkMode ? 'Light' : 'Dark'}</Wrapper>
+      <Wrapper>
+        {darkMode ? 'Light' : 'Dark'}
+      </Wrapper>
     </Container>
   );
 };

@@ -19,31 +19,23 @@ const Navbar = () => {
     <Wrapper>
       <div className='nav-center'>
         <img src={logo} alt='' />
-        <div className='right'>
-          <div
-            className='icon-container'
-            onClick={() => dispatch(toggle())}
-          >
-            {darkMode ? 'Light' : 'Dark'} Mode
-          </div>
-          {user && (
-            <div className='btn-container'>
-              <button className='btn' onClick={() => setShowLogout(!showLogout)}>
-                <FaUserCircle />
-                {user?.name}
-                <FaCaretDown />
+        {user && (
+          <div className='btn-container'>
+            <button className='btn' onClick={() => setShowLogout(!showLogout)}>
+              <FaUserCircle />
+              {user?.name}
+              <FaCaretDown />
+            </button>
+            <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
+              <button
+                className='dropdown-btn'
+                onClick={() => dispatch(setLogout())}
+              >
+                logout
               </button>
-              <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
-                <button
-                  className='dropdown-btn'
-                  onClick={() => dispatch(setLogout())}
-                >
-                  logout
-                </button>
-              </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </Wrapper>
   );

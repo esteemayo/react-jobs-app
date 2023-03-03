@@ -17,4 +17,8 @@ const Container = styled.div`
   border-bottom-right-radius: 2rem;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default DarkMode;

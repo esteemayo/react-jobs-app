@@ -30,6 +30,7 @@ export const darkTheme = {
   textDrop: 'var(--grey-100)',
   textError: 'var(--grey-600)',
   errorLink: 'var(--primary-700)',
+  bgMode: '#131417',
   bgIconMode: '#e4e4e8',
 };
 
@@ -65,5 +66,6 @@ export const lightTheme = {
   textDrop: 'var(--primary-500)',
   textError: 'var(--grey-500)',
   errorLink: 'var(--primary-500)',
+  bgMode: 'rgb(236, 236, 236)',
   bgIconMode: '#39393c',
 };

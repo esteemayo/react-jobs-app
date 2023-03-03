@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import styled from 'styled-components';
 
 const DarkMode = () => {
   const { darkMode } = useSelector((state) => state.darkMode);

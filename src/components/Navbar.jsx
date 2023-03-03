@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 
-import logo from 'assets/logo.svg';
 import { setLogout } from 'redux/users/userSlice';
 import { toggle } from 'redux/darkMode/darkMode';
 

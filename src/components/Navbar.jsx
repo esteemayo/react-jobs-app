@@ -108,14 +108,14 @@ const Wrapper = styled.nav`
       visibility: visible;
     }
 
-  .dropdown-btn {
-    background-color: transparent;
-    border-color: transparent;
-    color: ${({ theme }) => theme.textDrop};
-    letter-spacing: var(--letterSpacing);
-    text-transform: capitalize;
-    cursor: pointer;
-  }
+    .dropdown-btn {
+      background-color: transparent;
+      border-color: transparent;
+      color: ${({ theme }) => theme.textDrop};
+      letter-spacing: var(--letterSpacing);
+      text-transform: capitalize;
+      cursor: pointer;
+    }
   }
 `;
 

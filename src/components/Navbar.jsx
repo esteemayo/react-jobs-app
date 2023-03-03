@@ -75,21 +75,21 @@ const Wrapper = styled.nav`
 
   .btn-container {
     position: relative;
-
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 0.5rem;
-    position: relative;
-    background-color: ${({ theme }) => theme.bgBtn};
-    color: ${({ theme }) => theme.textBtn};
-    outline-color: ${({ theme }) => theme.colorOutline};
-
-    &:hover {
-      background-color: ${({ theme }) => theme.bgBtnHover};
+    
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 0.5rem;
+      position: relative;
+      background-color: ${({ theme }) => theme.bgBtn};
+      color: ${({ theme }) => theme.textBtn};
+      outline-color: ${({ theme }) => theme.colorOutline};
+  
+      &:hover {
+        background-color: ${({ theme }) => theme.bgBtnHover};
+      }
     }
-  }
   }
 
   .dropdown {

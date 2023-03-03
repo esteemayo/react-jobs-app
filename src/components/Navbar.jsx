@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className='nav-center'>
-        <img src={logo} alt='jobs app' />
+        <img src={logo} alt='' />
         <div className='right'>
           <div
             className='icon-container'

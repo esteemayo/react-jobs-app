@@ -126,7 +126,6 @@ const Container = styled.section`
     border-color: transparent;
     border-radius: var(--borderRadius);
     cursor: pointer;
-    background-color: transparent;
   }
 
   .edit-btn,

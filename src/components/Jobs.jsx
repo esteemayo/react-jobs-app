@@ -156,7 +156,7 @@ const Container = styled.section`
       display: none;
     }
 
-    background: var(--white);
+    background-color: var(--white);
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
 

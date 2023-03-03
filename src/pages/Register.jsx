@@ -176,7 +176,7 @@ const Wrapper = styled.section`
   }
 
   .member-btn {
-    background: transparent;
+    background-color: transparent;
     border: transparent;
     color: var(--primary-500);
     cursor: pointer;

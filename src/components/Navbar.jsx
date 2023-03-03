@@ -116,6 +116,7 @@ const Wrapper = styled.nav`
     text-transform: capitalize;
     cursor: pointer;
   }
+  }
 `;
 
 export default Navbar;

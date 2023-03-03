@@ -14,7 +14,7 @@ const Container = styled.div`
   bottom: 1%;
   width: 3rem;
   height: 3rem;
-  background-color: #131417;
+  background-color: ${({ theme }) => theme.bgMode};
   display: flex;
   align-items: center;
   justify-content: center;

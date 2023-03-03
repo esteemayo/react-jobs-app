@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 45px;
   height: 45px;
-  background-color: ${({ theme }) => theme.bgMode};
+  background-color: ${({ theme }) => theme.bgIconMode};
   border-radius: 50%;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   margin: 2px;

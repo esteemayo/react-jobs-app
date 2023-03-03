@@ -107,7 +107,6 @@ const Wrapper = styled.nav`
     &.show-dropdown {
       visibility: visible;
     }
-  }
 
   .dropdown-btn {
     background-color: transparent;

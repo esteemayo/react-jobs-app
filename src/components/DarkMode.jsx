@@ -11,7 +11,7 @@ const DarkMode = () => {
 const Container = styled.div`
   width: 4rem;
   height: 4rem;
-  background-color: #837dff;
+  background-color: #131417;
   display: flex;
   align-items: center;
   justify-content: center;

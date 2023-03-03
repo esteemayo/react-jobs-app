@@ -18,8 +18,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
   z-index: 1000;
 `;

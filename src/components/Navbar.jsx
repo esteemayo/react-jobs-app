@@ -75,7 +75,6 @@ const Wrapper = styled.nav`
 
   .btn-container {
     position: relative;
-  }
 
   .btn {
     display: flex;

@@ -20,7 +20,8 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 2rem;
+  height: 2rem;
 `;
 
 export default DarkMode;

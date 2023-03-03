@@ -113,7 +113,7 @@ const Container = styled.section`
   .edit-btn {
     color: ${({ theme }) => theme.bgEditIcon};
     border-color: transparent;
-    background: transparent !important;
+    background-color: transparent !important;
     outline: transparent;
     border-radius: var(--borderRadius);
     cursor: pointer;

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import logo from 'assets/logo.svg';
-import { toggle } from 'redux/darkMode/darkMode';
 import main from 'assets/main.svg';
 
 const Home = () => {

@@ -11,7 +11,7 @@ const DarkMode = () => {
 const Container = styled.div`
   position: fixed;
   left: 0;
-  bottom: 0.5rem;
+  bottom: 1%;
   width: 4rem;
   height: 4rem;
   background-color: #131417;

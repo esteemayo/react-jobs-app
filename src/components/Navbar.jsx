@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { setLogout } from 'redux/users/userSlice';
 import logo from 'assets/logo.svg';
-import { toggle } from 'redux/darkMode/darkMode';
 
 const Navbar = () => {
   const dispatch = useDispatch();

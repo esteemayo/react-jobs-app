@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-import { FaCaretDown, FaUserCircle, FaRegMoon } from 'react-icons/fa';
+import { FaCaretDown, FaUserCircle } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setLogout } from 'redux/users/userSlice';

@@ -21,6 +21,7 @@ const Container = styled.div`
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+  z-index: 1000;
 `;
 
 const Wrapper = styled.div`

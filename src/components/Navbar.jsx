@@ -67,7 +67,6 @@ const Wrapper = styled.nav`
   
       &:hover {
         background-color: ${({ theme }) => theme.bgBtnHover};
-        box-shadow: ${({ theme }) => theme.boxBtn};
       }
     }
   }

@@ -7,9 +7,6 @@ import { toggle } from 'redux/darkMode/darkMode';
 import main from 'assets/main.svg';
 
 const Home = () => {
-  const dispatch = useDispatch();
-  const { darkMode } = useSelector((state) => state.darkMode);
-
   return (
     <Wrapper>
       <nav>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-import { FaUserCircle, FaCaretDown } from 'react-icons/fa';
+import { FaUserCircle, FaCaretDown, FaRegMoon } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiSun } from 'react-icons/bi';
 

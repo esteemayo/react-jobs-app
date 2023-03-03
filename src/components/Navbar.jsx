@@ -52,17 +52,6 @@ const Wrapper = styled.nav`
     align-items: center;
   }
 
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-
-    .icon-container {
-      color: ${({ theme }) => theme.text};
-      cursor: pointer;
-    }
-  }
-
   .btn-container {
     position: relative;
     

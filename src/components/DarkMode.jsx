@@ -26,6 +26,8 @@ const Wrapper = styled.div`
   background-color: #e4e4e8;
   border-radius: 50%;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+  transform: scale(0.75);
 `;
 
 export default DarkMode;

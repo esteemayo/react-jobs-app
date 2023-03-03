@@ -12,7 +12,7 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper onClick={() => dispatch(toggle())}>
-        {darkMode ? 'Light' : 'Dark'}
+        {darkMode ? <BiSun /> : <FaRegMoon />}
       </Wrapper>
     </Container>
   );

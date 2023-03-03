@@ -38,6 +38,10 @@ const Wrapper = styled.div`
   transform: scale(0.75);
   cursor: pointer;
   transition: all 200ms ease-in;
+
+  & > * {
+    background-color: transparent;
+  }
 `;
 
 export default DarkMode;

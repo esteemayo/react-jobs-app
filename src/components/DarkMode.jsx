@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   transition: all 200ms ease-in;
 
   & > * {
-    color: transparent;
+    color: ${({ theme }) => theme.textMode};
   }
 `;
 

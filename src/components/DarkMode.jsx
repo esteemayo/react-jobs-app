@@ -28,7 +28,7 @@ const Container = styled.div`
   justify-content: center;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+  box-shadow: ${({ theme }) => theme.boxMode};
   z-index: 1000;
 `;
 

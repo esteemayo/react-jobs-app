@@ -14,12 +14,6 @@ const Home = () => {
     <Wrapper>
       <nav>
         <img src={logo} alt='' />
-        <div
-          className='icon-container'
-          onClick={() => dispatch(toggle())}
-        >
-          {darkMode ? 'Light' : 'Dark'} Mode
-        </div>
       </nav>
       <div className='container page'>
         <div className='info'>

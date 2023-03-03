@@ -103,9 +103,9 @@ const Wrapper = styled.nav`
     visibility: hidden;
     transition: var(--transition);
     border-radius: var(--borderRadius);
-
-  .show-dropdown {
-    visibility: visible;
+    
+    &.show-dropdown {
+      visibility: visible;
     }
   }
 

@@ -18,7 +18,7 @@ export const darkTheme = {
   textPending: '#f7f3d7',
   textDeclined: 'var(--red-light)',
   bgBtn: 'var(--primary-700)',
-  boxBtn: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+  boxBtn: '0 1px 3px 0 rgba(179, 178, 178, 0.1), 0 1px 2px 0 rgba(179, 178, 178, 0.06)',
   bgBtnHover: 'var(--primary-600)',
   textBtn: 'var(--grey-100)',
   textInfo: 'rgb(156, 156, 156)',

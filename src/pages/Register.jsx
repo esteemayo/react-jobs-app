@@ -132,52 +132,53 @@ const Wrapper = styled.section`
 
   .container {
     background-color: ${({ theme }) => theme.bgLighter};
-  
-  .form {
-    max-width: 400;
-    background-color: ${({ theme }) => theme.bgLighter};
-    border-top: 5px solid ${({ theme }) => theme.bgBtn};
-    box-shadow: ${({ theme }) => theme.box};
-
-    .logo {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 1.38rem;
-    }
     
-    h4 {
-      text-align: center;
-      color: ${({ theme }) => theme.text};
-    }
-
-    p {
-      margin: 0;
-      margin-top: 1rem;
-      text-align: center;
-      color: ${({ theme }) => theme.text};
-    }
-
-    .btn {
-      margin-top: 1rem;
-      background-color: ${({ theme }) => theme.bgBtn};
-      color: ${({ theme }) => theme.textBtn};
-      outline-color: ${({ theme }) => theme.colorOutline};
+    .form {
+      max-width: 400;
+      background-color: ${({ theme }) => theme.bgLighter};
+      border-top: 5px solid ${({ theme }) => theme.bgBtn};
+      box-shadow: ${({ theme }) => theme.box};
   
-      &:hover {
-        background-color: ${({ theme }) => theme.bgBtnHover};
+      .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.38rem;
       }
       
-      &:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
+      h4 {
+        text-align: center;
+        color: ${({ theme }) => theme.text};
       }
-    }
-
-    .member-btn {
-      background-color: transparent;
-      border: transparent;
-      color: var(--primary-500);
-      cursor: pointer;
+  
+      p {
+        margin: 0;
+        margin-top: 1rem;
+        text-align: center;
+        color: ${({ theme }) => theme.text};
+      }
+  
+      .btn {
+        margin-top: 1rem;
+        background-color: ${({ theme }) => theme.bgBtn};
+        color: ${({ theme }) => theme.textBtn};
+        outline-color: ${({ theme }) => theme.colorOutline};
+    
+        &:hover {
+          background-color: ${({ theme }) => theme.bgBtnHover};
+        }
+        
+        &:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+      }
+  
+      .member-btn {
+        background-color: transparent;
+        border: transparent;
+        color: var(--primary-500);
+        cursor: pointer;
+      }
     }
   }
 `;

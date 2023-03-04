@@ -134,6 +134,12 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.bgLighter};
   }
   
+  .form {
+    max-width: 400;
+    background-color: ${({ theme }) => theme.bgLighter};
+    border-top: 5px solid ${({ theme }) => theme.bgBtn};
+    box-shadow: ${({ theme }) => theme.box};
+
     .logo {
       display: block;
       margin: 0 auto;

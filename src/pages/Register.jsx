@@ -173,6 +173,7 @@ const Wrapper = styled.section`
       cursor: not-allowed;
     }
   }
+  }
 
   .member-btn {
     background-color: transparent;

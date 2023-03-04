@@ -180,6 +180,7 @@ const Wrapper = styled.section`
     color: var(--primary-500);
     cursor: pointer;
   }
+  }
 `;
 
 export default Register;

@@ -133,7 +133,7 @@ const Wrapper = styled.section`
   .container {
     background-color: ${({ theme }) => theme.bgLighter};
   }
-
+  
   .logo {
     display: block;
     margin: 0 auto;

@@ -134,11 +134,11 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.bgLighter};
   }
   
-  .logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1.38rem;
-  }
+    .logo {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1.38rem;
+    }
 
   .form {
     max-width: 400;

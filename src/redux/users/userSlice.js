@@ -15,7 +15,7 @@ export const loginUser = createAsyncThunk(
     try {
       const { data } = await userAPI.login({ ...user });
       toast.success('Login successful');
-      return data;
+      return data.details;
     } catch (err) {
       return rejectWithValue(err.response.data);
     }

@@ -132,7 +132,6 @@ const Wrapper = styled.section`
 
   .container {
     background-color: ${({ theme }) => theme.bgLighter};
-  }
   
   .form {
     max-width: 400;

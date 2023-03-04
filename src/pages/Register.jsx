@@ -174,12 +174,12 @@ const Wrapper = styled.section`
       }
     }
 
-  .member-btn {
-    background-color: transparent;
-    border: transparent;
-    color: var(--primary-500);
-    cursor: pointer;
-  }
+    .member-btn {
+      background-color: transparent;
+      border: transparent;
+      color: var(--primary-500);
+      cursor: pointer;
+    }
   }
 `;
 

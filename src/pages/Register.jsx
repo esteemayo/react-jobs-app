@@ -158,21 +158,21 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.text};
     }
 
-  .btn {
-    margin-top: 1rem;
-    background-color: ${({ theme }) => theme.bgBtn};
-    color: ${({ theme }) => theme.textBtn};
-    outline-color: ${({ theme }) => theme.colorOutline};
-
-    &:hover {
-      background-color: ${({ theme }) => theme.bgBtnHover};
+    .btn {
+      margin-top: 1rem;
+      background-color: ${({ theme }) => theme.bgBtn};
+      color: ${({ theme }) => theme.textBtn};
+      outline-color: ${({ theme }) => theme.colorOutline};
+  
+      &:hover {
+        background-color: ${({ theme }) => theme.bgBtnHover};
+      }
+      
+      &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
     }
-    
-    &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-    }
-  }
   }
 
   .member-btn {

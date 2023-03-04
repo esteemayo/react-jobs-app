@@ -157,7 +157,6 @@ const Wrapper = styled.section`
       text-align: center;
       color: ${({ theme }) => theme.text};
     }
-  }
 
   .btn {
     margin-top: 1rem;

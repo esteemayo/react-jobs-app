@@ -151,12 +151,12 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.text};
     }
 
-  p {
-    margin: 0;
-    margin-top: 1rem;
-    text-align: center;
-    color: ${({ theme }) => theme.text};
-  }
+    p {
+      margin: 0;
+      margin-top: 1rem;
+      text-align: center;
+      color: ${({ theme }) => theme.text};
+    }
   }
 
   .btn {

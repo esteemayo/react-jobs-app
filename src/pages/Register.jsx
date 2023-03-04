@@ -150,7 +150,6 @@ const Wrapper = styled.section`
       text-align: center;
       color: ${({ theme }) => theme.text};
     }
-  }
 
   p {
     margin: 0;

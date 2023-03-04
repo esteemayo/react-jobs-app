@@ -28,7 +28,7 @@ export const registerUser = createAsyncThunk(
     try {
       const { data } = await userAPI.register({ ...user });
       toast.success('Registration successful');
-      return data;
+      return data.details;
     } catch (err) {
       return rejectWithValue(err.response.data);
     }

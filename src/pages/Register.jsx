@@ -145,11 +145,11 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.bgLighter};
     border-top: 5px solid ${({ theme }) => theme.bgBtn};
     box-shadow: ${({ theme }) => theme.box};
-
-  h4 {
-    text-align: center;
-    color: ${({ theme }) => theme.text};
-  }
+    
+    h4 {
+      text-align: center;
+      color: ${({ theme }) => theme.text};
+    }
   }
 
   p {

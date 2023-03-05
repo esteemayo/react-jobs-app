@@ -32,7 +32,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #ccc;
-  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 } /*16px*/
 

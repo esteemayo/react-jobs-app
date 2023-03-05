@@ -33,6 +33,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #ccc;
   -webkit-box-sizing: content-box;
+  box-sizing: border-box;
 } /*16px*/
 
 :root {

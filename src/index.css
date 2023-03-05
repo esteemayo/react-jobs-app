@@ -3,6 +3,11 @@
 ::before {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 

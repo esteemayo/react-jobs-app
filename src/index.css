@@ -31,6 +31,7 @@ html {
   font-size: 100%;
   scroll-behavior: smooth;
   scrollbar-width: thin;
+  scrollbar-color: #ccc;
 } /*16px*/
 
 :root {

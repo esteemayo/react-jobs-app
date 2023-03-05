@@ -12,7 +12,7 @@ export const darkTheme = {
   colorBBtm: 'var(--grey-800)',
   textDate: 'var(--grey-300)',
   bgInterview: '#2d815a',
-  bgPending: '#47391e',
+  bgPending: '#857046',
   bgDeclined: '#b6454e',
   textInterview: 'var(--green-light)',
   textPending: '#f7f3d7',

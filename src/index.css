@@ -16,10 +16,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-::-webkit-slider-thumb {
-  background-color: #0f172a;
-}
-
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 
